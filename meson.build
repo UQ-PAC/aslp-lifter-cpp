@@ -13,4 +13,4 @@ project('offlineasl', 'cpp',
 # debug(get_option('buildtype'))
 
 subproject('aslp-lifter')
-subproject('aslp-lifter-instantiate')
+subproject('aslp-lifter-llvm')
