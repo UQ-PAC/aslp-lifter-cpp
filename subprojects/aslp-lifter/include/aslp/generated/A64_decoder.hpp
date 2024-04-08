@@ -31,7 +31,3244 @@ void aslp_lifter<Traits>::f_A64_decoder(typename Traits::bits v_enc) {
   } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("24"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00011"))) && (true))) {
     throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
   } else if ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("24"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "00100"))) && (true))) {
-    throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "010000")), iface.bits_lit(6U, "010000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("15"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && (true))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_MLA_Z_P_ZZZ___decode_test(v_enc))) {
+          f_MLA_Z_P_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (f_MLS_Z_P_ZZZ___decode_test(v_enc))) {
+          f_MLS_Z_P_ZZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("15"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && (true))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_MAD_Z_P_ZZZ___decode_test(v_enc))) {
+          f_MAD_Z_P_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (f_MSB_Z_P_ZZZ___decode_test(v_enc))) {
+          f_MSB_Z_P_ZZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_ADD_Z_P_ZZ___decode_test(v_enc))) {
+          f_ADD_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_SUB_Z_P_ZZ___decode_test(v_enc))) {
+          f_SUB_Z_P_ZZ__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && (f_SUBR_Z_P_ZZ___decode_test(v_enc))) {
+          f_SUBR_Z_P_ZZ__(v_enc);
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SMAX_Z_P_ZZ___decode_test(v_enc)))) {
+          f_SMAX_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UMAX_Z_P_ZZ___decode_test(v_enc)))) {
+          f_UMAX_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SMIN_Z_P_ZZ___decode_test(v_enc)))) {
+          f_SMIN_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UMIN_Z_P_ZZ___decode_test(v_enc)))) {
+          f_UMIN_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SABD_Z_P_ZZ___decode_test(v_enc)))) {
+          f_SABD_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UABD_Z_P_ZZ___decode_test(v_enc)))) {
+          f_UABD_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && (true))))))) {
+        const auto v_H = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_MUL_Z_P_ZZ___decode_test(v_enc)))) {
+          f_MUL_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(v_U, iface.bits_lit(1U, "1")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SMULH_Z_P_ZZ___decode_test(v_enc)))) {
+          f_SMULH_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UMULH_Z_P_ZZ___decode_test(v_enc)))) {
+          f_UMULH_Z_P_ZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "101"))) && ((true) && ((true) && (true))))))) {
+        const auto v_R = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SDIV_Z_P_ZZ___decode_test(v_enc)))) {
+          f_SDIV_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UDIV_Z_P_ZZ___decode_test(v_enc)))) {
+          f_UDIV_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SDIVR_Z_P_ZZ___decode_test(v_enc)))) {
+          f_SDIVR_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UDIVR_Z_P_ZZ___decode_test(v_enc)))) {
+          f_UDIVR_Z_P_ZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "110"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_ORR_Z_P_ZZ___decode_test(v_enc))) {
+          f_ORR_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_EOR_Z_P_ZZ___decode_test(v_enc))) {
+          f_EOR_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) && (f_AND_Z_P_ZZ___decode_test(v_enc))) {
+          f_AND_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && (f_BIC_Z_P_ZZ___decode_test(v_enc))) {
+          f_BIC_Z_P_ZZ__(v_enc);
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "001000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SADDV_R_P_Z___decode_test(v_enc)))) {
+          f_SADDV_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UADDV_R_P_Z___decode_test(v_enc)))) {
+          f_UADDV_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SMAXV_R_P_Z___decode_test(v_enc)))) {
+          f_SMAXV_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UMAXV_R_P_Z___decode_test(v_enc)))) {
+          f_UMAXV_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SMINV_R_P_Z___decode_test(v_enc)))) {
+          f_SMINV_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UMINV_R_P_Z___decode_test(v_enc)))) {
+          f_UMINV_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_MOVPRFX_Z_P_Z___decode_test(v_enc))) {
+          f_MOVPRFX_Z_P_Z__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_ORV_R_P_Z___decode_test(v_enc))) {
+          f_ORV_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_EORV_R_P_Z___decode_test(v_enc))) {
+          f_EORV_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) && (f_ANDV_R_P_Z___decode_test(v_enc))) {
+          f_ANDV_R_P_Z__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_L = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_ASR_Z_P_ZI___decode_test(v_enc))))) {
+          f_ASR_Z_P_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_LSR_Z_P_ZI___decode_test(v_enc))))) {
+          f_LSR_Z_P_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_LSL_Z_P_ZI___decode_test(v_enc))))) {
+          f_LSL_Z_P_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_ASRD_Z_P_ZI___decode_test(v_enc))))) {
+          f_ASRD_Z_P_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "1"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((true) && (true))))))) {
+        const auto v_R = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_L = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((true) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_ASR_Z_P_ZZ___decode_test(v_enc))))) {
+          f_ASR_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_LSR_Z_P_ZZ___decode_test(v_enc))))) {
+          f_LSR_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_LSL_Z_P_ZZ___decode_test(v_enc))))) {
+          f_LSL_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_ASRR_Z_P_ZZ___decode_test(v_enc))))) {
+          f_ASRR_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_LSRR_Z_P_ZZ___decode_test(v_enc))))) {
+          f_LSRR_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_LSLR_Z_P_ZZ___decode_test(v_enc))))) {
+          f_LSLR_Z_P_ZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && (true))))))) {
+        const auto v_R = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_L = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_ASR_Z_P_ZW___decode_test(v_enc))))) {
+          f_ASR_Z_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_LSR_Z_P_ZW___decode_test(v_enc))))) {
+          f_LSR_Z_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_L, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_LSL_Z_P_ZW___decode_test(v_enc))))) {
+          f_LSL_Z_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_R, iface.bits_lit(1U, "1"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "101000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_SXTB_Z_P_Z___decode_test(v_enc))) {
+          f_SXTB_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_UXTB_Z_P_Z___decode_test(v_enc))) {
+          f_UXTB_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) && (f_SXTH_Z_P_Z___decode_test(v_enc))) {
+          f_SXTH_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && (f_UXTH_Z_P_Z___decode_test(v_enc))) {
+          f_UXTH_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "100"))) && (f_SXTW_Z_P_Z___decode_test(v_enc))) {
+          f_SXTW_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "101"))) && (f_UXTW_Z_P_Z___decode_test(v_enc))) {
+          f_UXTW_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "110"))) && (f_ABS_Z_P_Z___decode_test(v_enc))) {
+          f_ABS_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && (f_NEG_Z_P_Z___decode_test(v_enc))) {
+          f_NEG_Z_P_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_CLS_Z_P_Z___decode_test(v_enc))) {
+          f_CLS_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_CLZ_Z_P_Z___decode_test(v_enc))) {
+          f_CLZ_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) && (f_CNT_Z_P_Z___decode_test(v_enc))) {
+          f_CNT_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && (f_CNOT_Z_P_Z___decode_test(v_enc))) {
+          f_CNOT_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "100"))) && (f_FABS_Z_P_Z___decode_test(v_enc))) {
+          f_FABS_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "101"))) && (f_FNEG_Z_P_Z___decode_test(v_enc))) {
+          f_FNEG_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "110"))) && (f_NOT_Z_P_Z___decode_test(v_enc))) {
+          f_NOT_Z_P_Z__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("3"));
+      if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_ADD_Z_ZZ___decode_test(v_enc))) {
+        f_ADD_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_SUB_Z_ZZ___decode_test(v_enc))) {
+        f_SUB_Z_ZZ__(v_enc);
+      } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "100"))) && (f_SQADD_Z_ZZ___decode_test(v_enc))) {
+        f_SQADD_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "101"))) && (f_UQADD_Z_ZZ___decode_test(v_enc))) {
+        f_UQADD_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "110"))) && (f_SQSUB_Z_ZZ___decode_test(v_enc))) {
+        f_SQSUB_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && (f_UQSUB_Z_ZZ___decode_test(v_enc))) {
+        f_UQSUB_Z_ZZ__(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "001000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && (true)))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_AND_Z_ZZ___decode_test(v_enc))) {
+          f_AND_Z_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ORR_Z_ZZ___decode_test(v_enc))) {
+          f_ORR_Z_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_EOR_Z_ZZ___decode_test(v_enc))) {
+          f_EOR_Z_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_BIC_Z_ZZ___decode_test(v_enc))) {
+          f_BIC_Z_ZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "010000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && (true))))))) {
+        if (f_INDEX_Z_II___decode_test(v_enc)) {
+          f_INDEX_Z_II__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true))))))) {
+        if (f_INDEX_Z_RI___decode_test(v_enc)) {
+          f_INDEX_Z_RI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && (true))))))) {
+        if (f_INDEX_Z_IR___decode_test(v_enc)) {
+          f_INDEX_Z_IR__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && (true))))))) {
+        if (f_INDEX_Z_RR___decode_test(v_enc)) {
+          f_INDEX_Z_RR__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "010100"))) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_ADDVL_R_RI___decode_test(v_enc))) {
+          f_ADDVL_R_RI__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (f_ADDPL_R_RI___decode_test(v_enc))) {
+          f_ADDPL_R_RI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "10000")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "11000")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "11100")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(v_opc2, iface.bits_lit(5U, "11110")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(5U, "11111"))) && (f_RDVL_R_I___decode_test(v_enc)))) {
+          f_RDVL_R_I__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "011000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_ASR_Z_ZW___decode_test(v_enc))) {
+          f_ASR_Z_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LSR_Z_ZW___decode_test(v_enc))) {
+          f_LSR_Z_ZW__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LSL_Z_ZW___decode_test(v_enc))) {
+          f_LSL_Z_ZW__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_ASR_Z_ZI___decode_test(v_enc))) {
+          f_ASR_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LSR_Z_ZI___decode_test(v_enc))) {
+          f_LSR_Z_ZI__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LSL_Z_ZI___decode_test(v_enc))) {
+          f_LSL_Z_ZI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "101000"))) && (true)))))))) {
+      const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+      if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_ADR_Z_AZ_D_s32_scaled_decode_test(v_enc))) {
+        f_ADR_Z_AZ_D_s32_scaled(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ADR_Z_AZ_D_u32_scaled_decode_test(v_enc))) {
+        f_ADR_Z_AZ_D_u32_scaled(v_enc);
+      } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (f_ADR_Z_AZ_SD_same_scaled_decode_test(v_enc))) {
+        f_ADR_Z_AZ_SD_same_scaled(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "101100"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && (true))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_FTSSEL_Z_ZZ___decode_test(v_enc))) {
+          f_FTSSEL_Z_ZZ__(v_enc);
+        } else if (iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(5U, "00000"))) && (f_FEXPA_Z_Z___decode_test(v_enc))) {
+          f_FEXPA_Z_Z__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(5U, "00001"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "00010"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "00100"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "01000"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(5U, "00000"))) && (f_MOVPRFX_Z_Z___decode_test(v_enc)))) {
+          f_MOVPRFX_Z_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (iface.f_eq_bits(v_opc2, iface.bits_lit(5U, "00001")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "00010")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "00100")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "01000")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "110000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "000"))) && (true)))))))) {
+        const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_D = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCH_Z_ZS___decode_test(v_enc))))) {
+          f_SQINCH_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCH_Z_ZS___decode_test(v_enc))))) {
+          f_UQINCH_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECH_Z_ZS___decode_test(v_enc))))) {
+          f_SQDECH_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECH_Z_ZS___decode_test(v_enc))))) {
+          f_UQDECH_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCW_Z_ZS___decode_test(v_enc))))) {
+          f_SQINCW_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCW_Z_ZS___decode_test(v_enc))))) {
+          f_UQINCW_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECW_Z_ZS___decode_test(v_enc))))) {
+          f_SQDECW_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECW_Z_ZS___decode_test(v_enc))))) {
+          f_UQDECW_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCD_Z_ZS___decode_test(v_enc))))) {
+          f_SQINCD_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCD_Z_ZS___decode_test(v_enc))))) {
+          f_UQINCD_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECD_Z_ZS___decode_test(v_enc))))) {
+          f_SQDECD_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECD_Z_ZS___decode_test(v_enc))))) {
+          f_UQDECD_Z_ZS__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && (true)))))))) {
+        const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((true) && (iface.f_eq_bits(v_op, iface.bits_lit(1U, "1")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_CNTB_R_S___decode_test(v_enc)))) {
+          f_CNTB_R_S__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_CNTH_R_S___decode_test(v_enc)))) {
+          f_CNTH_R_S__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_CNTW_R_S___decode_test(v_enc)))) {
+          f_CNTW_R_S__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_CNTD_R_S___decode_test(v_enc)))) {
+          f_CNTD_R_S__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "101"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && (true)))))))) {
+        const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_D = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && (f_INCH_Z_ZS___decode_test(v_enc)))) {
+          f_INCH_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && (f_DECH_Z_ZS___decode_test(v_enc)))) {
+          f_DECH_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && (f_INCW_Z_ZS___decode_test(v_enc)))) {
+          f_INCW_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && (f_DECW_Z_ZS___decode_test(v_enc)))) {
+          f_DECW_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && (f_INCD_Z_ZS___decode_test(v_enc)))) {
+          f_INCD_Z_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && (f_DECD_Z_ZS___decode_test(v_enc)))) {
+          f_DECD_Z_ZS__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && (true)))))))) {
+        const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_D = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && (f_INCB_R_RS___decode_test(v_enc)))) {
+          f_INCB_R_RS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && (f_DECB_R_RS___decode_test(v_enc)))) {
+          f_DECB_R_RS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && (f_INCH_R_RS___decode_test(v_enc)))) {
+          f_INCH_R_RS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && (f_DECH_R_RS___decode_test(v_enc)))) {
+          f_DECH_R_RS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && (f_INCW_R_RS___decode_test(v_enc)))) {
+          f_INCW_R_RS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && (f_DECW_R_RS___decode_test(v_enc)))) {
+          f_DECW_R_RS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && (f_INCD_R_RS___decode_test(v_enc)))) {
+          f_INCD_R_RS__(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && (f_DECD_R_RS___decode_test(v_enc)))) {
+          f_DECD_R_RS__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011")), iface.bits_lit(3U, "001"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "110"))) && (true)))))))) {
+        const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_sf = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_D = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCB_R_RS_SX_decode_test(v_enc)))))) {
+          f_SQINCB_R_RS_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCB_R_RS_UW_decode_test(v_enc)))))) {
+          f_UQINCB_R_RS_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECB_R_RS_SX_decode_test(v_enc)))))) {
+          f_SQDECB_R_RS_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECB_R_RS_UW_decode_test(v_enc)))))) {
+          f_UQDECB_R_RS_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCB_R_RS_X_decode_test(v_enc)))))) {
+          f_SQINCB_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCB_R_RS_X_decode_test(v_enc)))))) {
+          f_UQINCB_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECB_R_RS_X_decode_test(v_enc)))))) {
+          f_SQDECB_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECB_R_RS_X_decode_test(v_enc)))))) {
+          f_UQDECB_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCH_R_RS_SX_decode_test(v_enc)))))) {
+          f_SQINCH_R_RS_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCH_R_RS_UW_decode_test(v_enc)))))) {
+          f_UQINCH_R_RS_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECH_R_RS_SX_decode_test(v_enc)))))) {
+          f_SQDECH_R_RS_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECH_R_RS_UW_decode_test(v_enc)))))) {
+          f_UQDECH_R_RS_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCH_R_RS_X_decode_test(v_enc)))))) {
+          f_SQINCH_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCH_R_RS_X_decode_test(v_enc)))))) {
+          f_UQINCH_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECH_R_RS_X_decode_test(v_enc)))))) {
+          f_SQDECH_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECH_R_RS_X_decode_test(v_enc)))))) {
+          f_UQDECH_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCW_R_RS_SX_decode_test(v_enc)))))) {
+          f_SQINCW_R_RS_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCW_R_RS_UW_decode_test(v_enc)))))) {
+          f_UQINCW_R_RS_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECW_R_RS_SX_decode_test(v_enc)))))) {
+          f_SQDECW_R_RS_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECW_R_RS_UW_decode_test(v_enc)))))) {
+          f_UQDECW_R_RS_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCW_R_RS_X_decode_test(v_enc)))))) {
+          f_SQINCW_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCW_R_RS_X_decode_test(v_enc)))))) {
+          f_UQINCW_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECW_R_RS_X_decode_test(v_enc)))))) {
+          f_SQDECW_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECW_R_RS_X_decode_test(v_enc)))))) {
+          f_UQDECW_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCD_R_RS_SX_decode_test(v_enc)))))) {
+          f_SQINCD_R_RS_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCD_R_RS_UW_decode_test(v_enc)))))) {
+          f_UQINCD_R_RS_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECD_R_RS_SX_decode_test(v_enc)))))) {
+          f_SQDECD_R_RS_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECD_R_RS_UW_decode_test(v_enc)))))) {
+          f_UQDECD_R_RS_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQINCD_R_RS_X_decode_test(v_enc)))))) {
+          f_SQINCD_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQINCD_R_RS_X_decode_test(v_enc)))))) {
+          f_UQINCD_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SQDECD_R_RS_X_decode_test(v_enc)))))) {
+          f_SQDECD_R_RS_X(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UQDECD_R_RS_X_decode_test(v_enc)))))) {
+          f_UQDECD_R_RS_X(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "00000"))) && ((true) && ((true) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && (true))))) {
+        if (f_DUPM_Z_I___decode_test(v_enc)) {
+          f_DUPM_Z_I__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11")))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && (true))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_ORR_Z_ZI___decode_test(v_enc))) {
+          f_ORR_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_EOR_Z_ZI___decode_test(v_enc))) {
+          f_EOR_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_AND_Z_ZI___decode_test(v_enc))) {
+          f_AND_Z_ZI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && (true))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "01000"))) && ((true) && ((true) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && (true)))))) {
+        const auto v_M = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_M, iface.bits_lit(1U, "0"))) && (f_CPY_Z_O_I___decode_test(v_enc))) {
+          f_CPY_Z_O_I__(v_enc);
+        } else if ((iface.f_eq_bits(v_M, iface.bits_lit(1U, "1"))) && (f_CPY_Z_P_I___decode_test(v_enc))) {
+          f_CPY_Z_P_I__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100"))) && (true)))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && (true)))))) {
+        if (f_FCPY_Z_P_I___decode_test(v_enc)) {
+          f_FCPY_Z_P_I__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && (true)))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "001000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        if (f_DUP_Z_R___decode_test(v_enc)) {
+          f_DUP_Z_R__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        if (f_INSR_Z_R___decode_test(v_enc)) {
+          f_INSR_Z_R__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((true) && ((true) && ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_H = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "0"))) && (f_SUNPKLO_Z_Z___decode_test(v_enc)))) {
+          f_SUNPKLO_Z_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "1"))) && (f_SUNPKHI_Z_Z___decode_test(v_enc)))) {
+          f_SUNPKHI_Z_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "0"))) && (f_UUNPKLO_Z_Z___decode_test(v_enc)))) {
+          f_UUNPKLO_Z_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "1"))) && (f_UUNPKHI_Z_Z___decode_test(v_enc)))) {
+          f_UUNPKHI_Z_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        if (f_INSR_Z_V___decode_test(v_enc)) {
+          f_INSR_Z_V__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        if (f_REV_Z_Z___decode_test(v_enc)) {
+          f_REV_Z_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && (true)))))))))) {
+        if (f_DUP_Z_Zi___decode_test(v_enc)) {
+          f_DUP_Z_Zi__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("12"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && (true)))))))))) {
+        if (f_TBL_Z_ZZ_1_decode_test(v_enc)) {
+          f_TBL_Z_ZZ_1(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "010000"))) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        const auto v_H = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "0"))) && (f_PUNPKLO_P_P___decode_test(v_enc))) {
+          f_PUNPKLO_P_P__(v_enc);
+        } else if ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "1"))) && (f_PUNPKHI_P_P___decode_test(v_enc))) {
+          f_PUNPKHI_P_P__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0001")), iface.bits_lit(4U, "0000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_H = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "0"))) && (f_ZIP1_P_PP___decode_test(v_enc)))) {
+          f_ZIP1_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "1"))) && (f_ZIP2_P_PP___decode_test(v_enc)))) {
+          f_ZIP2_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "0"))) && (f_UZP1_P_PP___decode_test(v_enc)))) {
+          f_UZP1_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "1"))) && (f_UZP2_P_PP___decode_test(v_enc)))) {
+          f_UZP2_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "0"))) && (f_TRN1_P_PP___decode_test(v_enc)))) {
+          f_TRN1_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_H, iface.bits_lit(1U, "1"))) && (f_TRN2_P_PP___decode_test(v_enc)))) {
+          f_TRN2_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0001")), iface.bits_lit(4U, "0001"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10100"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        if (f_REV_P_P___decode_test(v_enc)) {
+          f_REV_P_P__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10101"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11010")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11010")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0111")), iface.bits_lit(4U, "0100"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11010")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0011")), iface.bits_lit(4U, "0010"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11010")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0001")), iface.bits_lit(4U, "0001"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11010")), iface.bits_lit(5U, "10010"))) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "11000"))) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "011000"))) && (true)))))))) {
+      const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("3"));
+      if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_ZIP1_Z_ZZ___decode_test(v_enc))) {
+        f_ZIP1_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_ZIP2_Z_ZZ___decode_test(v_enc))) {
+        f_ZIP2_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) && (f_UZP1_Z_ZZ___decode_test(v_enc))) {
+        f_UZP1_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && (f_UZP2_Z_ZZ___decode_test(v_enc))) {
+        f_UZP2_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "100"))) && (f_TRN1_Z_ZZ___decode_test(v_enc))) {
+        f_TRN1_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "101"))) && (f_TRN2_Z_ZZ___decode_test(v_enc))) {
+        f_TRN2_Z_ZZ__(v_enc);
+      } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "110"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        if (f_CPY_Z_P_V___decode_test(v_enc)) {
+          f_CPY_Z_P_V__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        if (f_COMPACT_Z_P_Z___decode_test(v_enc)) {
+          f_COMPACT_Z_P_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        const auto v_B = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "0"))) && (f_LASTA_R_P_Z___decode_test(v_enc))) {
+          f_LASTA_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "1"))) && (f_LASTB_R_P_Z___decode_test(v_enc))) {
+          f_LASTB_R_P_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        const auto v_B = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "0"))) && (f_LASTA_V_P_Z___decode_test(v_enc))) {
+          f_LASTA_V_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "1"))) && (f_LASTB_V_P_Z___decode_test(v_enc))) {
+          f_LASTB_V_P_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_REVB_Z_Z___decode_test(v_enc))) {
+          f_REVB_Z_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_REVH_Z_Z___decode_test(v_enc))) {
+          f_REVH_Z_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_REVW_Z_Z___decode_test(v_enc))) {
+          f_REVW_Z_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_RBIT_Z_P_Z___decode_test(v_enc))) {
+          f_RBIT_Z_P_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        if (f_CPY_Z_P_R___decode_test(v_enc)) {
+          f_CPY_Z_P_R__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        const auto v_B = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "0"))) && (f_CLASTA_Z_P_ZZ___decode_test(v_enc))) {
+          f_CLASTA_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "1"))) && (f_CLASTB_Z_P_ZZ___decode_test(v_enc))) {
+          f_CLASTB_Z_P_ZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "101"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        const auto v_B = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "0"))) && (f_CLASTA_V_P_Z___decode_test(v_enc))) {
+          f_CLASTA_V_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "1"))) && (f_CLASTB_V_P_Z___decode_test(v_enc))) {
+          f_CLASTB_V_P_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        if (f_SPLICE_Z_P_ZZ_Des_decode_test(v_enc)) {
+          f_SPLICE_Z_P_ZZ_Des(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011")), iface.bits_lit(3U, "001"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        const auto v_B = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "0"))) && (f_CLASTA_R_P_Z___decode_test(v_enc))) {
+          f_CLASTA_R_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "1"))) && (f_CLASTB_R_P_Z___decode_test(v_enc))) {
+          f_CLASTB_R_P_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000")))) && ((true) && ((true) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "110000"))) && (true)))))))) {
+      if (f_SEL_Z_P_ZZ___decode_test(v_enc)) {
+        f_SEL_Z_P_ZZ__(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && (true)))))) {
+        if (f_EXT_Z_ZI_Des_decode_test(v_enc)) {
+          f_EXT_Z_ZI_Des(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((true) && (true)))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+      const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("3"));
+      if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(3U, "000"))) && (f_ZIP1_Z_ZZ_Q_decode_test(v_enc)))) {
+        f_ZIP1_Z_ZZ_Q(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(3U, "001"))) && (f_ZIP2_Z_ZZ_Q_decode_test(v_enc)))) {
+        f_ZIP2_Z_ZZ_Q(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(3U, "010"))) && (f_UZP1_Z_ZZ_Q_decode_test(v_enc)))) {
+        f_UZP1_Z_ZZ_Q(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(3U, "011"))) && (f_UZP2_Z_ZZ_Q_decode_test(v_enc)))) {
+        f_UZP2_Z_ZZ_Q(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100")))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(3U, "110"))) && (f_TRN1_Z_ZZ_Q_decode_test(v_enc)))) {
+        f_TRN1_Z_ZZ_Q(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(3U, "111"))) && (f_TRN2_Z_ZZ_Q_decode_test(v_enc)))) {
+        f_TRN2_Z_ZZ_Q(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (true)) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((true) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("15"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ne = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPHS_P_P_ZZ___decode_test(v_enc))))) {
+          f_CMPHS_P_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPHI_P_P_ZZ___decode_test(v_enc))))) {
+          f_CMPHI_P_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPEQ_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPEQ_P_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPNE_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPNE_P_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPGE_P_P_ZZ___decode_test(v_enc))))) {
+          f_CMPGE_P_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPGT_P_P_ZZ___decode_test(v_enc))))) {
+          f_CMPGT_P_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPEQ_P_P_ZZ___decode_test(v_enc))))) {
+          f_CMPEQ_P_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPNE_P_P_ZZ___decode_test(v_enc))))) {
+          f_CMPNE_P_P_ZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))) {
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("15"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_lt = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ne = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPGE_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPGE_P_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPGT_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPGT_P_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPLT_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPLT_P_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPLE_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPLE_P_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPHS_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPHS_P_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPHI_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPHI_P_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPLO_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPLO_P_P_ZW__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPLS_P_P_ZW___decode_test(v_enc))))) {
+          f_CMPLS_P_P_ZW__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((true) && (true)))))))) {
+      const auto v_lt = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+      const auto v_ne = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+      if ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPHS_P_P_ZI___decode_test(v_enc)))) {
+        f_CMPHS_P_P_ZI__(v_enc);
+      } else if ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPHI_P_P_ZI___decode_test(v_enc)))) {
+        f_CMPHI_P_P_ZI__(v_enc);
+      } else if ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPLO_P_P_ZI___decode_test(v_enc)))) {
+        f_CMPLO_P_P_ZI__(v_enc);
+      } else if ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPLS_P_P_ZI___decode_test(v_enc)))) {
+        f_CMPLS_P_P_ZI__(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "010000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("15"), /*wd*/ iface.bigint_lit("1"));
+      const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+      const auto v_ne = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+      if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPGE_P_P_ZI___decode_test(v_enc))))) {
+        f_CMPGE_P_P_ZI__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPGT_P_P_ZI___decode_test(v_enc))))) {
+        f_CMPGT_P_P_ZI__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPLT_P_P_ZI___decode_test(v_enc))))) {
+        f_CMPLT_P_P_ZI__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPLE_P_P_ZI___decode_test(v_enc))))) {
+        f_CMPLE_P_P_ZI__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CMPEQ_P_P_ZI___decode_test(v_enc))))) {
+        f_CMPEQ_P_P_ZI__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CMPNE_P_P_ZI___decode_test(v_enc))))) {
+        f_CMPNE_P_P_ZI__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && (true))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "010000"))) && (true)))))))) {
+      const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1"));
+      const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+      const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1"));
+      const auto v_o3 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+      if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_AND_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_AND_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_BIC_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_BIC_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_EOR_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_EOR_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_SEL_P_P_PP___decode_test(v_enc)))))) {
+        f_SEL_P_P_PP__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_ANDS_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_ANDS_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_BICS_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_BICS_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_EORS_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_EORS_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1")))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_ORR_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_ORR_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_ORN_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_ORN_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_NOR_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_NOR_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_NAND_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_NAND_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_ORRS_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_ORRS_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_ORNS_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_ORNS_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_NORS_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_NORS_P_P_PP_Z(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_NANDS_P_P_PP_Z_decode_test(v_enc)))))) {
+        f_NANDS_P_P_PP_Z(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "110000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_B = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "0"))) && (f_BRKPA_P_P_PP___decode_test(v_enc))))) {
+          f_BRKPA_P_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "1"))) && (f_BRKPB_P_P_PP___decode_test(v_enc))))) {
+          f_BRKPB_P_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "0"))) && (f_BRKPAS_P_P_PP___decode_test(v_enc))))) {
+          f_BRKPAS_P_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "1"))) && (f_BRKPBS_P_P_PP___decode_test(v_enc))))) {
+          f_BRKPBS_P_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "01000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "010000"))) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))))) {
+        const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && (f_BRKN_P_P_PP___decode_test(v_enc))) {
+          f_BRKN_P_P_PP__(v_enc);
+        } else if ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && (f_BRKNS_P_P_PP___decode_test(v_enc))) {
+          f_BRKNS_P_P_PP__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0111")), iface.bits_lit(4U, "0000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && (true))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0100")), iface.bits_lit(4U, "0100"))) && ((true) && ((true) && ((true) && ((true) && ((true) && (true))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0010")), iface.bits_lit(4U, "0010"))) && ((true) && ((true) && ((true) && ((true) && ((true) && (true))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0001")), iface.bits_lit(4U, "0001"))) && ((true) && ((true) && ((true) && ((true) && ((true) && (true))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && (true))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000")))) && ((true) && ((true) && ((true) && ((true) && ((true) && (true))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && (true))))))))))) {
+        const auto v_B = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_M = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+        if ((true) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(v_M, iface.bits_lit(1U, "1"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((true) && (f_BRKA_P_P_P___decode_test(v_enc))))) {
+          f_BRKA_P_P_P__(v_enc);
+        } else if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_M, iface.bits_lit(1U, "0"))) && (f_BRKAS_P_P_P_Z_decode_test(v_enc))))) {
+          f_BRKAS_P_P_P_Z(v_enc);
+        } else if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && ((true) && (f_BRKB_P_P_P___decode_test(v_enc))))) {
+          f_BRKB_P_P_P__(v_enc);
+        } else if ((iface.f_eq_bits(v_B, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_M, iface.bits_lit(1U, "0"))) && (f_BRKBS_P_P_P_Z_decode_test(v_enc))))) {
+          f_BRKBS_P_P_P_Z(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "01000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "110000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("4"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(4U, "0000"))) && (f_PTEST__P_P___decode_test(v_enc))))) {
+          f_PTEST__P_P__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(v_opc2, iface.bits_lit(4U, "0001"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(4U, "1110")), iface.bits_lit(4U, "0010"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(4U, "1100")), iface.bits_lit(4U, "0100"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(4U, "1000")), iface.bits_lit(4U, "1000"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0100"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1011")), iface.bits_lit(4U, "0010"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1001")), iface.bits_lit(4U, "0001"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000")), iface.bits_lit(4U, "0000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(v_S, iface.bits_lit(1U, "0")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && (f_PFIRST_P_P_P___decode_test(v_enc)))) {
+          f_PFIRST_P_P_P__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("5"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && (f_PFALSE_P___decode_test(v_enc)))) {
+          f_PFALSE_P__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(v_S, iface.bits_lit(1U, "1")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("5"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000")))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && (f_RDFFR_P_P_F___decode_test(v_enc)))) {
+          f_RDFFR_P_P_F__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && (f_RDFFRS_P_P_F___decode_test(v_enc)))) {
+          f_RDFFRS_P_P_F__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1001"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1001"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        if (f_PNEXT_P_P_P___decode_test(v_enc)) {
+          f_PNEXT_P_P_P__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1001"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1001"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1001"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("5"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && (f_RDFFR_P_F___decode_test(v_enc)))) {
+          f_RDFFR_P_F__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (iface.f_eq_bits(v_S, iface.bits_lit(1U, "1")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1001"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("5"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000")))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1110")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1110")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        const auto v_S = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "0"))) && (f_PTRUE_P_S___decode_test(v_enc))) {
+          f_PTRUE_P_S__(v_enc);
+        } else if ((iface.f_eq_bits(v_S, iface.bits_lit(1U, "1"))) && (f_PTRUES_P_S___decode_test(v_enc))) {
+          f_PTRUES_P_S__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1110")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1110")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1110")), iface.bits_lit(4U, "1000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001")), iface.bits_lit(3U, "001"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1110")), iface.bits_lit(4U, "1100"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1010")), iface.bits_lit(4U, "1010"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && (true))))))))) {
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_lt = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_eq = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+        if ((true) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "0"))) && (f_WHILELT_P_P_RR___decode_test(v_enc))))) {
+          f_WHILELT_P_P_RR__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "1"))) && (f_WHILELE_P_P_RR___decode_test(v_enc))))) {
+          f_WHILELE_P_P_RR__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "0"))) && (f_WHILELO_P_P_RR___decode_test(v_enc))))) {
+          f_WHILELO_P_P_RR__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "1"))) && (f_WHILELS_P_P_RR___decode_test(v_enc))))) {
+          f_WHILELS_P_P_RR__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))))))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ne = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_CTERMEQ_RR___decode_test(v_enc)))) {
+          f_CTERMEQ_RR__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_CTERMNE_RR___decode_test(v_enc)))) {
+          f_CTERMNE_RR__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && (! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000")))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000")))) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "010000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "110000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && ((true) && (true)))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_ADD_Z_ZI___decode_test(v_enc))) {
+          f_ADD_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_SUB_Z_ZI___decode_test(v_enc))) {
+          f_SUB_Z_ZI__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && (f_SUBR_Z_ZI___decode_test(v_enc))) {
+          f_SUBR_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "100"))) && (f_SQADD_Z_ZI___decode_test(v_enc))) {
+          f_SQADD_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "101"))) && (f_UQADD_Z_ZI___decode_test(v_enc))) {
+          f_UQADD_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "110"))) && (f_SQSUB_Z_ZI___decode_test(v_enc))) {
+          f_SQSUB_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && (f_UQSUB_Z_ZI___decode_test(v_enc))) {
+          f_UQSUB_Z_ZI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((true) && ((true) && ((true) && (true)))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && (iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && (f_SMAX_Z_ZI___decode_test(v_enc)))) {
+          f_SMAX_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && (f_UMAX_Z_ZI___decode_test(v_enc)))) {
+          f_UMAX_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && (f_SMIN_Z_ZI___decode_test(v_enc)))) {
+          f_SMIN_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && (f_UMIN_Z_ZI___decode_test(v_enc)))) {
+          f_UMIN_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((true) && ((true) && (true)))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && (f_MUL_Z_ZI___decode_test(v_enc)))) {
+          f_MUL_Z_ZI__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && (true)))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_DUP_Z_I___decode_test(v_enc))) {
+          f_DUP_Z_I__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && (true)))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && (f_FDUP_Z_I___decode_test(v_enc)))) {
+          f_FDUP_Z_I__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+      const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1"));
+      if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && (f_CNTP_R_P_P___decode_test(v_enc)))) {
+        f_CNTP_R_P_P__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1")))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (true)) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) && (true)) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) && (true)) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "10100"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_D = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2"));
+        if ((true) && ((true) && (iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((true) && ((true) && (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_SQINCP_Z_P_Z___decode_test(v_enc))))) {
+          f_SQINCP_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_UQINCP_Z_P_Z___decode_test(v_enc))))) {
+          f_UQINCP_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_SQDECP_Z_P_Z___decode_test(v_enc))))) {
+          f_SQDECP_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_UQDECP_Z_P_Z___decode_test(v_enc))))) {
+          f_UQDECP_Z_P_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        const auto v_D = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_sf = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("1"));
+        if ((true) && ((true) && ((true) && (iface.f_eq_bits(v_op, iface.bits_lit(1U, "1")))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_SQINCP_R_P_R_SX_decode_test(v_enc)))))) {
+          f_SQINCP_R_P_R_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_SQINCP_R_P_R_X_decode_test(v_enc)))))) {
+          f_SQINCP_R_P_R_X(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_UQINCP_R_P_R_UW_decode_test(v_enc)))))) {
+          f_UQINCP_R_P_R_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_UQINCP_R_P_R_X_decode_test(v_enc)))))) {
+          f_UQINCP_R_P_R_X(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_SQDECP_R_P_R_SX_decode_test(v_enc)))))) {
+          f_SQDECP_R_P_R_SX(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_SQDECP_R_P_R_X_decode_test(v_enc)))))) {
+          f_SQDECP_R_P_R_X(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_UQDECP_R_P_R_UW_decode_test(v_enc)))))) {
+          f_UQDECP_R_P_R_UW(v_enc);
+        } else if ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_sf, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_UQDECP_R_P_R_X_decode_test(v_enc)))))) {
+          f_UQDECP_R_P_R_X(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_D = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((true) && (iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((true) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && (f_INCP_Z_P_Z___decode_test(v_enc))))) {
+          f_INCP_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && (f_DECP_Z_P_Z___decode_test(v_enc))))) {
+          f_DECP_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_D = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((true) && (iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((true) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && (f_INCP_R_P_R___decode_test(v_enc))))) {
+          f_INCP_R_P_R__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_D, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && (f_DECP_R_P_R___decode_test(v_enc))))) {
+          f_DECP_R_P_R__(v_enc);
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "10100"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "100100"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000"))))))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_WRFFR_F_P___decode_test(v_enc))) {
+          f_WRFFR_F_P__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("5"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000"))))))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_SETFFR_F___decode_test(v_enc))) {
+          f_SETFFR_F__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("5"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000")), iface.bits_lit(4U, "1000"))) && (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000"))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("5"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0100")), iface.bits_lit(4U, "0100"))) && (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000"))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("5"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0010")), iface.bits_lit(4U, "0010"))) && (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000"))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("5"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0001")), iface.bits_lit(4U, "0001"))) && (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000"))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && (! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("0"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000")))))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("9"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000")))) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((true) && ((true) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "10100"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "101000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "11000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "100000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && (true))))))))) {
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SDOT_Z_ZZZ___decode_test(v_enc))) {
+          f_SDOT_Z_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UDOT_Z_ZZZ___decode_test(v_enc))) {
+          f_UDOT_Z_ZZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000")))) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100"))) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        if (iface.f_eq_bits(iface.f_and_bits(v_size, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && (f_USDOT_Z_ZZZ_S_decode_test(v_enc))) {
+          f_USDOT_Z_ZZZ_S(v_enc);
+        } else if (iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "100000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((true) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && (true))))))) {
+        const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(iface.f_and_bits(v_size, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SDOT_Z_ZZZi_S_decode_test(v_enc)))) {
+          f_SDOT_Z_ZZZi_S(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UDOT_Z_ZZZi_S_decode_test(v_enc)))) {
+          f_UDOT_Z_ZZZi_S(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SDOT_Z_ZZZi_D_decode_test(v_enc)))) {
+          f_SDOT_Z_ZZZi_D(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UDOT_Z_ZZZi_D_decode_test(v_enc)))) {
+          f_UDOT_Z_ZZZi_D(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("11"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && (true))))))) {
+        const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(iface.f_and_bits(v_size, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_USDOT_Z_ZZZi_S_decode_test(v_enc)))) {
+          f_USDOT_Z_ZZZi_S(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_SUDOT_Z_ZZZi_S_decode_test(v_enc)))) {
+          f_SUDOT_Z_ZZZi_S(v_enc);
+        } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000")))) && ((true) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "100000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1100")), iface.bits_lit(4U, "0000"))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1110")), iface.bits_lit(4U, "0100"))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0110"))) && (true))))))) {
+        const auto v_uns = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_uns, iface.bits_lit(2U, "00"))) && (f_SMMLA_Z_ZZZ___decode_test(v_enc))) {
+          f_SMMLA_Z_ZZZ__(v_enc);
+        } else if (iface.f_eq_bits(v_uns, iface.bits_lit(2U, "01"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_uns, iface.bits_lit(2U, "10"))) && (f_USMMLA_Z_ZZZ___decode_test(v_enc))) {
+          f_USMMLA_Z_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_uns, iface.bits_lit(2U, "11"))) && (f_UMMLA_Z_ZZZ___decode_test(v_enc))) {
+          f_UMMLA_Z_ZZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0111"))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "1000")), iface.bits_lit(4U, "1000"))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "110000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((true) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "100000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      if (f_FCMLA_Z_P_ZZZ___decode_test(v_enc)) {
+        f_FCMLA_Z_P_ZZZ__(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11010")), iface.bits_lit(5U, "00010"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "100000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      if (f_FCADD_Z_P_ZZ___decode_test(v_enc)) {
+        f_FCADD_Z_P_ZZ__(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "101000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "110000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "00001"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "100000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "00100"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "00100"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "101000"))) && (true)))))))) {
+      const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+      const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2"));
+      if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && (true)) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00")))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && (f_BFCVTNT_Z_P_Z_S2BF_decode_test(v_enc)))) {
+        f_BFCVTNT_Z_P_Z_S2BF(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11")))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (true)) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "00100"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110000")), iface.bits_lit(6U, "110000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11000")), iface.bits_lit(5U, "01000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "100000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "010110")), iface.bits_lit(6U, "000010"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111110")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+      const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+      if ((iface.f_eq_bits(iface.f_and_bits(v_size, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_FMLA_Z_ZZZi_H_decode_test(v_enc)))) {
+        f_FMLA_Z_ZZZi_H(v_enc);
+      } else if ((iface.f_eq_bits(iface.f_and_bits(v_size, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (f_FMLS_Z_ZZZi_H_decode_test(v_enc)))) {
+        f_FMLS_Z_ZZZi_H(v_enc);
+      } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_FMLA_Z_ZZZi_S_decode_test(v_enc)))) {
+        f_FMLA_Z_ZZZi_S(v_enc);
+      } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (f_FMLS_Z_ZZZi_S_decode_test(v_enc)))) {
+        f_FMLS_Z_ZZZi_S(v_enc);
+      } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && (f_FMLA_Z_ZZZi_D_decode_test(v_enc)))) {
+        f_FMLA_Z_ZZZi_D(v_enc);
+      } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (f_FMLS_Z_ZZZi_D_decode_test(v_enc)))) {
+        f_FMLS_Z_ZZZi_D(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "000100"))) && (true)))))))) {
+      const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+      if (iface.f_eq_bits(iface.f_and_bits(v_size, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && (f_FCMLA_Z_ZZZi_H_decode_test(v_enc))) {
+        f_FCMLA_Z_ZZZi_H(v_enc);
+      } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && (f_FCMLA_Z_ZZZi_S_decode_test(v_enc))) {
+        f_FCMLA_Z_ZZZi_S(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "001000"))) && (true)))))))) {
+      const auto v_size = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+      if ((iface.f_eq_bits(iface.f_and_bits(v_size, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && (f_FMUL_Z_ZZi_H_decode_test(v_enc))) {
+        f_FMUL_Z_ZZi_H(v_enc);
+      } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "10"))) && (f_FMUL_Z_ZZi_S_decode_test(v_enc))) {
+        f_FMUL_Z_ZZi_S(v_enc);
+      } else if ((iface.f_eq_bits(v_size, iface.bits_lit(2U, "11"))) && (f_FMUL_Z_ZZi_D_decode_test(v_enc))) {
+        f_FMUL_Z_ZZi_D(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "001001"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "001100"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110100")), iface.bits_lit(6U, "010000"))) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && (true)))))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        if (iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (f_BFDOT_Z_ZZZi___decode_test(v_enc))) {
+          f_BFDOT_Z_ZZZi__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && (true)))))))))) {
+        const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_T = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_T, iface.bits_lit(1U, "0"))) && (f_BFMLALB_Z_ZZZi___decode_test(v_enc))))) {
+          f_BFMLALB_Z_ZZZi__(v_enc);
+        } else if ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_T, iface.bits_lit(1U, "1"))) && (f_BFMLALT_Z_ZZZi___decode_test(v_enc))))) {
+          f_BFMLALT_Z_ZZZi__(v_enc);
+        } else if ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110100")), iface.bits_lit(6U, "010100"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110110")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))))) {
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        if (iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (f_BFDOT_Z_ZZZ___decode_test(v_enc))) {
+          f_BFDOT_Z_ZZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && (true)))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && (true)))))))))) {
+        const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_T = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_T, iface.bits_lit(1U, "0"))) && (f_BFMLALB_Z_ZZZ___decode_test(v_enc))))) {
+          f_BFMLALB_Z_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_T, iface.bits_lit(1U, "1"))) && (f_BFMLALT_Z_ZZZ___decode_test(v_enc))))) {
+          f_BFMLALT_Z_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "110100")), iface.bits_lit(6U, "100100"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "110000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111001"))) && (true)))))))) {
+      const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+      if (iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_BFMMLA_Z_ZZZ___decode_test(v_enc))) {
+        f_BFMMLA_Z_ZZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_FMMLA_Z_ZZZ_S_decode_test(v_enc))) {
+        f_FMMLA_Z_ZZZ_S(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_FMMLA_Z_ZZZ_D_decode_test(v_enc))) {
+        f_FMMLA_Z_ZZZ_D(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111110")), iface.bits_lit(6U, "111010"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "111100"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "010000")), iface.bits_lit(6U, "010000"))) && (true)))))))) {
+      const auto v_op = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("15"), /*wd*/ iface.bigint_lit("1"));
+      const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+      const auto v_o3 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+      if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_FCMGE_P_P_ZZ___decode_test(v_enc))))) {
+        f_FCMGE_P_P_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_FCMGT_P_P_ZZ___decode_test(v_enc))))) {
+        f_FCMGT_P_P_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_FCMEQ_P_P_ZZ___decode_test(v_enc))))) {
+        f_FCMEQ_P_P_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_FCMNE_P_P_ZZ___decode_test(v_enc))))) {
+        f_FCMNE_P_P_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))) && (f_FCMUO_P_P_ZZ___decode_test(v_enc))))) {
+        f_FCMUO_P_P_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_FACGE_P_P_ZZ___decode_test(v_enc))))) {
+        f_FACGE_P_P_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && (iface.f_eq_bits(v_o3, iface.bits_lit(1U, "0"))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_op, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_o3, iface.bits_lit(1U, "1"))) && (f_FACGT_P_P_ZZ___decode_test(v_enc))))) {
+        f_FACGT_P_P_ZZ__(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("3"));
+      if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_FADD_Z_ZZ___decode_test(v_enc))) {
+        f_FADD_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_FSUB_Z_ZZ___decode_test(v_enc))) {
+        f_FSUB_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) && (f_FMUL_Z_ZZ___decode_test(v_enc))) {
+        f_FMUL_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && (f_FTSMUL_Z_ZZ___decode_test(v_enc))) {
+        f_FTSMUL_Z_ZZ__(v_enc);
+      } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "110"))) && (f_FRECPS_Z_ZZ___decode_test(v_enc))) {
+        f_FRECPS_Z_ZZ__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && (f_FRSQRTS_Z_ZZ___decode_test(v_enc))) {
+        f_FRSQRTS_Z_ZZ__(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && ((true) && ((true) && (true))))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("4"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "0000"))) && (f_FADD_Z_P_ZZ___decode_test(v_enc))) {
+          f_FADD_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "0001"))) && (f_FSUB_Z_P_ZZ___decode_test(v_enc))) {
+          f_FSUB_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "0010"))) && (f_FMUL_Z_P_ZZ___decode_test(v_enc))) {
+          f_FMUL_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "0011"))) && (f_FSUBR_Z_P_ZZ___decode_test(v_enc))) {
+          f_FSUBR_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "0100"))) && (f_FMAXNM_Z_P_ZZ___decode_test(v_enc))) {
+          f_FMAXNM_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "0101"))) && (f_FMINNM_Z_P_ZZ___decode_test(v_enc))) {
+          f_FMINNM_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "0110"))) && (f_FMAX_Z_P_ZZ___decode_test(v_enc))) {
+          f_FMAX_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "0111"))) && (f_FMIN_Z_P_ZZ___decode_test(v_enc))) {
+          f_FMIN_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "1000"))) && (f_FABD_Z_P_ZZ___decode_test(v_enc))) {
+          f_FABD_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "1001"))) && (f_FSCALE_Z_P_ZZ___decode_test(v_enc))) {
+          f_FSCALE_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "1010"))) && (f_FMULX_Z_P_ZZ___decode_test(v_enc))) {
+          f_FMULX_Z_P_ZZ__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(4U, "1011"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "1100"))) && (f_FDIVR_Z_P_ZZ___decode_test(v_enc))) {
+          f_FDIVR_Z_P_ZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(4U, "1101"))) && (f_FDIV_Z_P_ZZ___decode_test(v_enc))) {
+          f_FDIV_Z_P_ZZ__(v_enc);
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(4U, "1110")), iface.bits_lit(4U, "1110"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && (true))))))))) {
+        if (f_FTMAD_Z_ZZI___decode_test(v_enc)) {
+          f_FTMAD_Z_ZZI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000")))) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("6"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000"))) && (true))))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_FADD_Z_P_ZS___decode_test(v_enc))) {
+          f_FADD_Z_P_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_FSUB_Z_P_ZS___decode_test(v_enc))) {
+          f_FSUB_Z_P_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) && (f_FMUL_Z_P_ZS___decode_test(v_enc))) {
+          f_FMUL_Z_P_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && (f_FSUBR_Z_P_ZS___decode_test(v_enc))) {
+          f_FSUBR_Z_P_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "100"))) && (f_FMAXNM_Z_P_ZS___decode_test(v_enc))) {
+          f_FMAXNM_Z_P_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "101"))) && (f_FMINNM_Z_P_ZS___decode_test(v_enc))) {
+          f_FMINNM_Z_P_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "110"))) && (f_FMAX_Z_P_ZS___decode_test(v_enc))) {
+          f_FMAX_Z_P_ZS__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && (f_FMIN_Z_P_ZS___decode_test(v_enc))) {
+          f_FMIN_Z_P_ZS__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("19"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("6"), /*wd*/ iface.bigint_lit("4")), iface.bits_lit(4U, "0000")))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "101000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_FRINTN_Z_P_Z___decode_test(v_enc))) {
+          f_FRINTN_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) && (f_FRINTP_Z_P_Z___decode_test(v_enc))) {
+          f_FRINTP_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "010"))) && (f_FRINTM_Z_P_Z___decode_test(v_enc))) {
+          f_FRINTM_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "011"))) && (f_FRINTZ_Z_P_Z___decode_test(v_enc))) {
+          f_FRINTZ_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "100"))) && (f_FRINTA_Z_P_Z___decode_test(v_enc))) {
+          f_FRINTA_Z_P_Z__(v_enc);
+        } else if (iface.f_eq_bits(v_opc, iface.bits_lit(3U, "101"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "110"))) && (f_FRINTX_Z_P_Z___decode_test(v_enc))) {
+          f_FRINTX_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && (f_FRINTI_Z_P_Z___decode_test(v_enc))) {
+          f_FRINTI_Z_P_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && (f_FCVT_Z_P_Z_S2H_decode_test(v_enc)))) {
+          f_FCVT_Z_P_Z_S2H(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))) && (f_FCVT_Z_P_Z_H2S_decode_test(v_enc)))) {
+          f_FCVT_Z_P_Z_H2S(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && (f_BFCVT_Z_P_Z_S2BF_decode_test(v_enc)))) {
+          f_BFCVT_Z_P_Z_S2BF(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && (f_FCVT_Z_P_Z_D2H_decode_test(v_enc)))) {
+          f_FCVT_Z_P_Z_D2H(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))) && (f_FCVT_Z_P_Z_H2D_decode_test(v_enc)))) {
+          f_FCVT_Z_P_Z_H2D(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && (f_FCVT_Z_P_Z_D2S_decode_test(v_enc)))) {
+          f_FCVT_Z_P_Z_D2S(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && (f_FCVT_Z_P_Z_S2D_decode_test(v_enc)))) {
+          f_FCVT_Z_P_Z_S2D(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_FRECPX_Z_P_Z___decode_test(v_enc))) {
+          f_FRECPX_Z_P_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_FSQRT_Z_P_Z___decode_test(v_enc))) {
+          f_FSQRT_Z_P_Z__(v_enc);
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SCVTF_Z_P_Z_H2FP16_decode_test(v_enc))))) {
+          f_SCVTF_Z_P_Z_H2FP16(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UCVTF_Z_P_Z_H2FP16_decode_test(v_enc))))) {
+          f_UCVTF_Z_P_Z_H2FP16(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SCVTF_Z_P_Z_W2FP16_decode_test(v_enc))))) {
+          f_SCVTF_Z_P_Z_W2FP16(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UCVTF_Z_P_Z_W2FP16_decode_test(v_enc))))) {
+          f_UCVTF_Z_P_Z_W2FP16(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SCVTF_Z_P_Z_X2FP16_decode_test(v_enc))))) {
+          f_SCVTF_Z_P_Z_X2FP16(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UCVTF_Z_P_Z_X2FP16_decode_test(v_enc))))) {
+          f_UCVTF_Z_P_Z_X2FP16(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SCVTF_Z_P_Z_W2S_decode_test(v_enc))))) {
+          f_SCVTF_Z_P_Z_W2S(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UCVTF_Z_P_Z_W2S_decode_test(v_enc))))) {
+          f_UCVTF_Z_P_Z_W2S(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SCVTF_Z_P_Z_W2D_decode_test(v_enc))))) {
+          f_SCVTF_Z_P_Z_W2D(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UCVTF_Z_P_Z_W2D_decode_test(v_enc))))) {
+          f_UCVTF_Z_P_Z_W2D(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SCVTF_Z_P_Z_X2S_decode_test(v_enc))))) {
+          f_SCVTF_Z_P_Z_X2S(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UCVTF_Z_P_Z_X2S_decode_test(v_enc))))) {
+          f_UCVTF_Z_P_Z_X2S(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_SCVTF_Z_P_Z_X2D_decode_test(v_enc))))) {
+          f_SCVTF_Z_P_Z_X2D(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_UCVTF_Z_P_Z_X2D_decode_test(v_enc))))) {
+          f_UCVTF_Z_P_Z_X2D(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "110"))) && ((true) && ((true) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_opc2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_FCVTZS_Z_P_Z_FP162H_decode_test(v_enc))))) {
+          f_FCVTZS_Z_P_Z_FP162H(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_FCVTZU_Z_P_Z_FP162H_decode_test(v_enc))))) {
+          f_FCVTZU_Z_P_Z_FP162H(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_FCVTZS_Z_P_Z_FP162W_decode_test(v_enc))))) {
+          f_FCVTZS_Z_P_Z_FP162W(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_FCVTZU_Z_P_Z_FP162W_decode_test(v_enc))))) {
+          f_FCVTZU_Z_P_Z_FP162W(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_FCVTZS_Z_P_Z_FP162X_decode_test(v_enc))))) {
+          f_FCVTZS_Z_P_Z_FP162X(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_FCVTZU_Z_P_Z_FP162X_decode_test(v_enc))))) {
+          f_FCVTZU_Z_P_Z_FP162X(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.f_and_bits(v_opc2, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_FCVTZS_Z_P_Z_S2W_decode_test(v_enc))))) {
+          f_FCVTZS_Z_P_Z_S2W(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_FCVTZU_Z_P_Z_S2W_decode_test(v_enc))))) {
+          f_FCVTZU_Z_P_Z_S2W(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_FCVTZS_Z_P_Z_D2W_decode_test(v_enc))))) {
+          f_FCVTZS_Z_P_Z_D2W(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_FCVTZU_Z_P_Z_D2W_decode_test(v_enc))))) {
+          f_FCVTZU_Z_P_Z_D2W(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "01"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_FCVTZS_Z_P_Z_S2X_decode_test(v_enc))))) {
+          f_FCVTZS_Z_P_Z_S2X(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_FCVTZU_Z_P_Z_S2X_decode_test(v_enc))))) {
+          f_FCVTZU_Z_P_Z_S2X(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (f_FCVTZS_Z_P_Z_D2X_decode_test(v_enc))))) {
+          f_FCVTZS_Z_P_Z_D2X(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc2, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && (f_FCVTZU_Z_P_Z_D2X_decode_test(v_enc))))) {
+          f_FCVTZU_Z_P_Z_D2X(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "00000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "001000"))) && (true)))))))) {
+      const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+      if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_FADDV_V_P_Z___decode_test(v_enc))) {
+        f_FADDV_V_P_Z__(v_enc);
+      } else if (iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "100"))) && (f_FMAXNMV_V_P_Z___decode_test(v_enc))) {
+        f_FMAXNMV_V_P_Z__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "101"))) && (f_FMINNMV_V_P_Z___decode_test(v_enc))) {
+        f_FMINNMV_V_P_Z__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "110"))) && (f_FMAXV_V_P_Z___decode_test(v_enc))) {
+        f_FMAXV_V_P_Z__(v_enc);
+      } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && (f_FMINV_V_P_Z___decode_test(v_enc))) {
+        f_FMINV_V_P_Z__(v_enc);
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "00100"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "001000"))) && (true)))))))) {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "00100"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111100")), iface.bits_lit(6U, "001100"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && (true))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+        if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "110"))) && (f_FRECPE_Z_Z___decode_test(v_enc))) {
+          f_FRECPE_Z_Z__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && (f_FRSQRTE_Z_Z___decode_test(v_enc))) {
+          f_FRSQRTE_Z_Z__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "01000"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "001000"))) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && (true))))))) {
+        const auto v_eq = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_lt = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ne = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_FCMGE_P_P_Z0___decode_test(v_enc))))) {
+          f_FCMGE_P_P_Z0__(v_enc);
+        } else if ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_FCMGT_P_P_Z0___decode_test(v_enc))))) {
+          f_FCMGT_P_P_Z0__(v_enc);
+        } else if ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_FCMLT_P_P_Z0___decode_test(v_enc))))) {
+          f_FCMLT_P_P_Z0__(v_enc);
+        } else if ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))) && (f_FCMLE_P_P_Z0___decode_test(v_enc))))) {
+          f_FCMLE_P_P_Z0__(v_enc);
+        } else if ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "1"))) && ((true) && (iface.f_eq_bits(v_ne, iface.bits_lit(1U, "1"))))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_FCMEQ_P_P_Z0___decode_test(v_enc))))) {
+          f_FCMEQ_P_P_Z0__(v_enc);
+        } else if ((iface.f_eq_bits(v_eq, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_lt, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ne, iface.bits_lit(1U, "0"))) && (f_FCMNE_P_P_Z0___decode_test(v_enc))))) {
+          f_FCMNE_P_P_Z0__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("18"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "01100"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "001000"))) && (true)))))))) {
+      const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("16"), /*wd*/ iface.bigint_lit("3"));
+      if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "000"))) && (f_FADDA_V_P_Z___decode_test(v_enc))) {
+        f_FADDA_V_P_Z__(v_enc);
+      } else if (iface.f_eq_bits(v_opc, iface.bits_lit(3U, "001"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if (iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("17"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "10000")), iface.bits_lit(5U, "10000"))) && ((true) && ((true) && (true)))))))) {
+      if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("15"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_FMLA_Z_P_ZZZ___decode_test(v_enc))) {
+          f_FMLA_Z_P_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_FMLS_Z_P_ZZZ___decode_test(v_enc))) {
+          f_FMLS_Z_P_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_FNMLA_Z_P_ZZZ___decode_test(v_enc))) {
+          f_FNMLA_Z_P_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_FNMLS_Z_P_ZZZ___decode_test(v_enc))) {
+          f_FNMLS_Z_P_ZZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("15"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && (f_FMAD_Z_P_ZZZ___decode_test(v_enc))) {
+          f_FMAD_Z_P_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_FMSB_Z_P_ZZZ___decode_test(v_enc))) {
+          f_FMSB_Z_P_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_FNMAD_Z_P_ZZZ___decode_test(v_enc))) {
+          f_FNMAD_Z_P_ZZZ__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_FNMSB_Z_P_ZZZ___decode_test(v_enc))) {
+          f_FNMSB_Z_P_ZZZ__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_PRFB_I_P_BZ_S_x32_scaled_decode_test(v_enc))) {
+          f_PRFB_I_P_BZ_S_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_PRFH_I_P_BZ_S_x32_scaled_decode_test(v_enc))) {
+          f_PRFH_I_P_BZ_S_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_PRFW_I_P_BZ_S_x32_scaled_decode_test(v_enc))) {
+          f_PRFW_I_P_BZ_S_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_PRFD_I_P_BZ_S_x32_scaled_decode_test(v_enc))) {
+          f_PRFD_I_P_BZ_S_x32_scaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ff = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SH_Z_P_BZ_S_x32_scaled_decode_test(v_enc)))) {
+          f_LD1SH_Z_P_BZ_S_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SH_Z_P_BZ_S_x32_scaled_decode_test(v_enc)))) {
+          f_LDFF1SH_Z_P_BZ_S_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1H_Z_P_BZ_S_x32_scaled_decode_test(v_enc)))) {
+          f_LD1H_Z_P_BZ_S_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1H_Z_P_BZ_S_x32_scaled_decode_test(v_enc)))) {
+          f_LDFF1H_Z_P_BZ_S_x32_scaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ff = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (true)) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1W_Z_P_BZ_S_x32_scaled_decode_test(v_enc)))) {
+          f_LD1W_Z_P_BZ_S_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1W_Z_P_BZ_S_x32_scaled_decode_test(v_enc)))) {
+          f_LDFF1W_Z_P_BZ_S_x32_scaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        if (f_LDR_P_BI___decode_test(v_enc)) {
+          f_LDR_P_BI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && ((true) && ((true) && (true)))))))) {
+        if (f_LDR_Z_BI___decode_test(v_enc)) {
+          f_LDR_Z_BI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "101")), iface.bits_lit(3U, "001"))) && ((true) && ((true) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_PRFB_I_P_BI_S_decode_test(v_enc))) {
+          f_PRFB_I_P_BI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_PRFH_I_P_BI_S_decode_test(v_enc))) {
+          f_PRFH_I_P_BI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_PRFW_I_P_BI_S_decode_test(v_enc))) {
+          f_PRFW_I_P_BI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_PRFD_I_P_BI_S_decode_test(v_enc))) {
+          f_PRFD_I_P_BI_S(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11")))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ff = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SB_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1SB_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SB_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1SB_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1B_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1B_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1B_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1B_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SH_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1SH_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SH_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1SH_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1H_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1H_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1H_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1H_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1W_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1W_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1W_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1W_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_PRFB_I_P_BR_S_decode_test(v_enc))) {
+          f_PRFB_I_P_BR_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_PRFH_I_P_BR_S_decode_test(v_enc))) {
+          f_PRFH_I_P_BR_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_PRFW_I_P_BR_S_decode_test(v_enc))) {
+          f_PRFW_I_P_BR_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_PRFD_I_P_BR_S_decode_test(v_enc))) {
+          f_PRFD_I_P_BR_S(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_PRFB_I_P_AI_S_decode_test(v_enc))) {
+          f_PRFB_I_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_PRFH_I_P_AI_S_decode_test(v_enc))) {
+          f_PRFH_I_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_PRFW_I_P_AI_S_decode_test(v_enc))) {
+          f_PRFW_I_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_PRFD_I_P_AI_S_decode_test(v_enc))) {
+          f_PRFD_I_P_AI_S(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "110"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ff = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SB_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LD1SB_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SB_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LDFF1SB_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1B_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LD1B_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1B_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LDFF1B_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SH_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LD1SH_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SH_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LDFF1SH_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1H_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LD1H_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1H_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LDFF1H_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1W_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LD1W_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1W_Z_P_AI_S_decode_test(v_enc))))) {
+          f_LDFF1W_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((true) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_dtypeh = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_dtypel = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "00"))) && (f_LD1RB_Z_P_BI_U8_decode_test(v_enc)))) {
+          f_LD1RB_Z_P_BI_U8(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "01"))) && (f_LD1RB_Z_P_BI_U16_decode_test(v_enc)))) {
+          f_LD1RB_Z_P_BI_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "10"))) && (f_LD1RB_Z_P_BI_U32_decode_test(v_enc)))) {
+          f_LD1RB_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "11"))) && (f_LD1RB_Z_P_BI_U64_decode_test(v_enc)))) {
+          f_LD1RB_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "00"))) && (f_LD1RSW_Z_P_BI_S64_decode_test(v_enc)))) {
+          f_LD1RSW_Z_P_BI_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "01"))) && (f_LD1RH_Z_P_BI_U16_decode_test(v_enc)))) {
+          f_LD1RH_Z_P_BI_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "10"))) && (f_LD1RH_Z_P_BI_U32_decode_test(v_enc)))) {
+          f_LD1RH_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "11"))) && (f_LD1RH_Z_P_BI_U64_decode_test(v_enc)))) {
+          f_LD1RH_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "00"))) && (f_LD1RSH_Z_P_BI_S64_decode_test(v_enc)))) {
+          f_LD1RSH_Z_P_BI_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "01"))) && (f_LD1RSH_Z_P_BI_S32_decode_test(v_enc)))) {
+          f_LD1RSH_Z_P_BI_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "10"))) && (f_LD1RW_Z_P_BI_U32_decode_test(v_enc)))) {
+          f_LD1RW_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "11"))) && (f_LD1RW_Z_P_BI_U64_decode_test(v_enc)))) {
+          f_LD1RW_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "00"))) && (f_LD1RSB_Z_P_BI_S64_decode_test(v_enc)))) {
+          f_LD1RSB_Z_P_BI_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "01"))) && (f_LD1RSB_Z_P_BI_S32_decode_test(v_enc)))) {
+          f_LD1RSB_Z_P_BI_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "10"))) && (f_LD1RSB_Z_P_BI_S16_decode_test(v_enc)))) {
+          f_LD1RSB_Z_P_BI_S16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtypeh, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_dtypel, iface.bits_lit(2U, "11"))) && (f_LD1RD_Z_P_BI_U64_decode_test(v_enc)))) {
+          f_LD1RD_Z_P_BI_U64(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "101"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && (true)))))))) {
+      if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && (true))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_LDNT1B_Z_P_BI_Contiguous_decode_test(v_enc))) {
+          f_LDNT1B_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_LDNT1H_Z_P_BI_Contiguous_decode_test(v_enc))) {
+          f_LDNT1H_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_LDNT1W_Z_P_BI_Contiguous_decode_test(v_enc))) {
+          f_LDNT1W_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_LDNT1D_Z_P_BI_Contiguous_decode_test(v_enc))) {
+          f_LDNT1D_Z_P_BI_Contiguous(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && (true))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_LDNT1B_Z_P_BR_Contiguous_decode_test(v_enc))) {
+          f_LDNT1B_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_LDNT1H_Z_P_BR_Contiguous_decode_test(v_enc))) {
+          f_LDNT1H_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_LDNT1W_Z_P_BR_Contiguous_decode_test(v_enc))) {
+          f_LDNT1W_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_LDNT1D_Z_P_BR_Contiguous_decode_test(v_enc))) {
+          f_LDNT1D_Z_P_BR_Contiguous(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && (true))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LD2B_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD2B_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_LD3B_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD3B_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LD4B_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD4B_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LD2H_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD2H_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_LD3H_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD3H_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LD4H_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD4H_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LD2W_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD2W_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_LD3W_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD3W_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LD4W_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD4W_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LD2D_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD2D_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_LD3D_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD3D_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LD4D_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_LD4D_Z_P_BI_Contiguous(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && (true))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LD2B_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD2B_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_LD3B_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD3B_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LD4B_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD4B_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LD2H_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD2H_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_LD3H_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD3H_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LD4H_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD4H_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LD2W_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD2W_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_LD3W_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD3W_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LD4W_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD4W_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_LD2D_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD2D_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_LD3D_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD3D_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_LD4D_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD4D_Z_P_BR_Contiguous(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && (true))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_ssz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2"));
+        if ((true) && (iface.f_eq_bits(iface.f_and_bits(v_ssz, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "00"))) && (f_LD1RQB_Z_P_BI_U8_decode_test(v_enc)))) {
+          f_LD1RQB_Z_P_BI_U8(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "01"))) && (f_LD1ROB_Z_P_BI_U8_decode_test(v_enc)))) {
+          f_LD1ROB_Z_P_BI_U8(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "00"))) && (f_LD1RQH_Z_P_BI_U16_decode_test(v_enc)))) {
+          f_LD1RQH_Z_P_BI_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "01"))) && (f_LD1ROH_Z_P_BI_U16_decode_test(v_enc)))) {
+          f_LD1ROH_Z_P_BI_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "00"))) && (f_LD1RQW_Z_P_BI_U32_decode_test(v_enc)))) {
+          f_LD1RQW_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "01"))) && (f_LD1ROW_Z_P_BI_U32_decode_test(v_enc)))) {
+          f_LD1ROW_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "00"))) && (f_LD1RQD_Z_P_BI_U64_decode_test(v_enc)))) {
+          f_LD1RQD_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "01"))) && (f_LD1ROD_Z_P_BI_U64_decode_test(v_enc)))) {
+          f_LD1ROD_Z_P_BI_U64(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "101"))) && (true))))))) {
+        const auto v_dtype = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("4"));
+        if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0000"))) && (f_LD1B_Z_P_BI_U8_decode_test(v_enc))) {
+          f_LD1B_Z_P_BI_U8(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0001"))) && (f_LD1B_Z_P_BI_U16_decode_test(v_enc))) {
+          f_LD1B_Z_P_BI_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0010"))) && (f_LD1B_Z_P_BI_U32_decode_test(v_enc))) {
+          f_LD1B_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0011"))) && (f_LD1B_Z_P_BI_U64_decode_test(v_enc))) {
+          f_LD1B_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0100"))) && (f_LD1SW_Z_P_BI_S64_decode_test(v_enc))) {
+          f_LD1SW_Z_P_BI_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0101"))) && (f_LD1H_Z_P_BI_U16_decode_test(v_enc))) {
+          f_LD1H_Z_P_BI_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0110"))) && (f_LD1H_Z_P_BI_U32_decode_test(v_enc))) {
+          f_LD1H_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0111"))) && (f_LD1H_Z_P_BI_U64_decode_test(v_enc))) {
+          f_LD1H_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1000"))) && (f_LD1SH_Z_P_BI_S64_decode_test(v_enc))) {
+          f_LD1SH_Z_P_BI_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1001"))) && (f_LD1SH_Z_P_BI_S32_decode_test(v_enc))) {
+          f_LD1SH_Z_P_BI_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1010"))) && (f_LD1W_Z_P_BI_U32_decode_test(v_enc))) {
+          f_LD1W_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1011"))) && (f_LD1W_Z_P_BI_U64_decode_test(v_enc))) {
+          f_LD1W_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1100"))) && (f_LD1SB_Z_P_BI_S64_decode_test(v_enc))) {
+          f_LD1SB_Z_P_BI_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1101"))) && (f_LD1SB_Z_P_BI_S32_decode_test(v_enc))) {
+          f_LD1SB_Z_P_BI_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1110"))) && (f_LD1SB_Z_P_BI_S16_decode_test(v_enc))) {
+          f_LD1SB_Z_P_BI_S16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1111"))) && (f_LD1D_Z_P_BI_U64_decode_test(v_enc))) {
+          f_LD1D_Z_P_BI_U64(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "001"))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "101"))) && (true))))))) {
+        const auto v_dtype = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("4"));
+        if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0000"))) && (f_LDNF1B_Z_P_BI_U8_decode_test(v_enc))) {
+          f_LDNF1B_Z_P_BI_U8(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0001"))) && (f_LDNF1B_Z_P_BI_U16_decode_test(v_enc))) {
+          f_LDNF1B_Z_P_BI_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0010"))) && (f_LDNF1B_Z_P_BI_U32_decode_test(v_enc))) {
+          f_LDNF1B_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0011"))) && (f_LDNF1B_Z_P_BI_U64_decode_test(v_enc))) {
+          f_LDNF1B_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0100"))) && (f_LDNF1SW_Z_P_BI_S64_decode_test(v_enc))) {
+          f_LDNF1SW_Z_P_BI_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0101"))) && (f_LDNF1H_Z_P_BI_U16_decode_test(v_enc))) {
+          f_LDNF1H_Z_P_BI_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0110"))) && (f_LDNF1H_Z_P_BI_U32_decode_test(v_enc))) {
+          f_LDNF1H_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0111"))) && (f_LDNF1H_Z_P_BI_U64_decode_test(v_enc))) {
+          f_LDNF1H_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1000"))) && (f_LDNF1SH_Z_P_BI_S64_decode_test(v_enc))) {
+          f_LDNF1SH_Z_P_BI_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1001"))) && (f_LDNF1SH_Z_P_BI_S32_decode_test(v_enc))) {
+          f_LDNF1SH_Z_P_BI_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1010"))) && (f_LDNF1W_Z_P_BI_U32_decode_test(v_enc))) {
+          f_LDNF1W_Z_P_BI_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1011"))) && (f_LDNF1W_Z_P_BI_U64_decode_test(v_enc))) {
+          f_LDNF1W_Z_P_BI_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1100"))) && (f_LDNF1SB_Z_P_BI_S64_decode_test(v_enc))) {
+          f_LDNF1SB_Z_P_BI_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1101"))) && (f_LDNF1SB_Z_P_BI_S32_decode_test(v_enc))) {
+          f_LDNF1SB_Z_P_BI_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1110"))) && (f_LDNF1SB_Z_P_BI_S16_decode_test(v_enc))) {
+          f_LDNF1SB_Z_P_BI_S16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1111"))) && (f_LDNF1D_Z_P_BI_U64_decode_test(v_enc))) {
+          f_LDNF1D_Z_P_BI_U64(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "000"))) && (true))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_ssz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2"));
+        if ((true) && (iface.f_eq_bits(iface.f_and_bits(v_ssz, iface.bits_lit(2U, "10")), iface.bits_lit(2U, "10")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "00"))) && (f_LD1RQB_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD1RQB_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "01"))) && (f_LD1ROB_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD1ROB_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "00"))) && (f_LD1RQH_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD1RQH_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "01"))) && (f_LD1ROH_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD1ROH_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "00"))) && (f_LD1RQW_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD1RQW_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "01"))) && (f_LD1ROW_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD1ROW_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "00"))) && (f_LD1RQD_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD1RQD_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_ssz, iface.bits_lit(2U, "01"))) && (f_LD1ROD_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_LD1ROD_Z_P_BR_Contiguous(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "010"))) && (true))))))) {
+        const auto v_dtype = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("4"));
+        if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0000"))) && (f_LD1B_Z_P_BR_U8_decode_test(v_enc))) {
+          f_LD1B_Z_P_BR_U8(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0001"))) && (f_LD1B_Z_P_BR_U16_decode_test(v_enc))) {
+          f_LD1B_Z_P_BR_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0010"))) && (f_LD1B_Z_P_BR_U32_decode_test(v_enc))) {
+          f_LD1B_Z_P_BR_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0011"))) && (f_LD1B_Z_P_BR_U64_decode_test(v_enc))) {
+          f_LD1B_Z_P_BR_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0100"))) && (f_LD1SW_Z_P_BR_S64_decode_test(v_enc))) {
+          f_LD1SW_Z_P_BR_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0101"))) && (f_LD1H_Z_P_BR_U16_decode_test(v_enc))) {
+          f_LD1H_Z_P_BR_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0110"))) && (f_LD1H_Z_P_BR_U32_decode_test(v_enc))) {
+          f_LD1H_Z_P_BR_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0111"))) && (f_LD1H_Z_P_BR_U64_decode_test(v_enc))) {
+          f_LD1H_Z_P_BR_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1000"))) && (f_LD1SH_Z_P_BR_S64_decode_test(v_enc))) {
+          f_LD1SH_Z_P_BR_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1001"))) && (f_LD1SH_Z_P_BR_S32_decode_test(v_enc))) {
+          f_LD1SH_Z_P_BR_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1010"))) && (f_LD1W_Z_P_BR_U32_decode_test(v_enc))) {
+          f_LD1W_Z_P_BR_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1011"))) && (f_LD1W_Z_P_BR_U64_decode_test(v_enc))) {
+          f_LD1W_Z_P_BR_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1100"))) && (f_LD1SB_Z_P_BR_S64_decode_test(v_enc))) {
+          f_LD1SB_Z_P_BR_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1101"))) && (f_LD1SB_Z_P_BR_S32_decode_test(v_enc))) {
+          f_LD1SB_Z_P_BR_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1110"))) && (f_LD1SB_Z_P_BR_S16_decode_test(v_enc))) {
+          f_LD1SB_Z_P_BR_S16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1111"))) && (f_LD1D_Z_P_BR_U64_decode_test(v_enc))) {
+          f_LD1D_Z_P_BR_U64(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "011"))) && (true))))))) {
+        const auto v_dtype = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("4"));
+        if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0000"))) && (f_LDFF1B_Z_P_BR_U8_decode_test(v_enc))) {
+          f_LDFF1B_Z_P_BR_U8(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0001"))) && (f_LDFF1B_Z_P_BR_U16_decode_test(v_enc))) {
+          f_LDFF1B_Z_P_BR_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0010"))) && (f_LDFF1B_Z_P_BR_U32_decode_test(v_enc))) {
+          f_LDFF1B_Z_P_BR_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0011"))) && (f_LDFF1B_Z_P_BR_U64_decode_test(v_enc))) {
+          f_LDFF1B_Z_P_BR_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0100"))) && (f_LDFF1SW_Z_P_BR_S64_decode_test(v_enc))) {
+          f_LDFF1SW_Z_P_BR_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0101"))) && (f_LDFF1H_Z_P_BR_U16_decode_test(v_enc))) {
+          f_LDFF1H_Z_P_BR_U16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0110"))) && (f_LDFF1H_Z_P_BR_U32_decode_test(v_enc))) {
+          f_LDFF1H_Z_P_BR_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "0111"))) && (f_LDFF1H_Z_P_BR_U64_decode_test(v_enc))) {
+          f_LDFF1H_Z_P_BR_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1000"))) && (f_LDFF1SH_Z_P_BR_S64_decode_test(v_enc))) {
+          f_LDFF1SH_Z_P_BR_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1001"))) && (f_LDFF1SH_Z_P_BR_S32_decode_test(v_enc))) {
+          f_LDFF1SH_Z_P_BR_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1010"))) && (f_LDFF1W_Z_P_BR_U32_decode_test(v_enc))) {
+          f_LDFF1W_Z_P_BR_U32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1011"))) && (f_LDFF1W_Z_P_BR_U64_decode_test(v_enc))) {
+          f_LDFF1W_Z_P_BR_U64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1100"))) && (f_LDFF1SB_Z_P_BR_S64_decode_test(v_enc))) {
+          f_LDFF1SB_Z_P_BR_S64(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1101"))) && (f_LDFF1SB_Z_P_BR_S32_decode_test(v_enc))) {
+          f_LDFF1SB_Z_P_BR_S32(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1110"))) && (f_LDFF1SB_Z_P_BR_S16_decode_test(v_enc))) {
+          f_LDFF1SB_Z_P_BR_S16(v_enc);
+        } else if ((iface.f_eq_bits(v_dtype, iface.bits_lit(4U, "1111"))) && (f_LDFF1D_Z_P_BR_U64_decode_test(v_enc))) {
+          f_LDFF1D_Z_P_BR_U64(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100"))) && (true))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((true) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_PRFB_I_P_BZ_D_64_scaled_decode_test(v_enc))) {
+          f_PRFB_I_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_PRFH_I_P_BZ_D_64_scaled_decode_test(v_enc))) {
+          f_PRFH_I_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_PRFW_I_P_BZ_D_64_scaled_decode_test(v_enc))) {
+          f_PRFW_I_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_PRFD_I_P_BZ_D_64_scaled_decode_test(v_enc))) {
+          f_PRFD_I_P_BZ_D_64_scaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_PRFB_I_P_BZ_D_x32_scaled_decode_test(v_enc))) {
+          f_PRFB_I_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_PRFH_I_P_BZ_D_x32_scaled_decode_test(v_enc))) {
+          f_PRFH_I_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_PRFW_I_P_BZ_D_x32_scaled_decode_test(v_enc))) {
+          f_PRFW_I_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_PRFD_I_P_BZ_D_x32_scaled_decode_test(v_enc))) {
+          f_PRFD_I_P_BZ_D_x32_scaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ff = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SH_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LD1SH_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SH_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LDFF1SH_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1H_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LD1H_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1H_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LDFF1H_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SW_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LD1SW_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SW_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LDFF1SW_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1W_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LD1W_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1W_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LDFF1W_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1D_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LD1D_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1D_Z_P_BZ_D_64_scaled_decode_test(v_enc))))) {
+          f_LDFF1D_Z_P_BZ_D_64_scaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ff = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SH_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LD1SH_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SH_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LDFF1SH_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1H_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LD1H_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1H_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LDFF1H_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SW_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LD1SW_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SW_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LDFF1SW_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1W_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LD1W_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1W_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LDFF1W_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1D_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LD1D_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1D_Z_P_BZ_D_x32_scaled_decode_test(v_enc))))) {
+          f_LDFF1D_Z_P_BZ_D_x32_scaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((true) && ((true) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_PRFB_I_P_AI_D_decode_test(v_enc))) {
+          f_PRFB_I_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_PRFH_I_P_AI_D_decode_test(v_enc))) {
+          f_PRFH_I_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_PRFW_I_P_AI_D_decode_test(v_enc))) {
+          f_PRFW_I_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_PRFD_I_P_AI_D_decode_test(v_enc))) {
+          f_PRFD_I_P_AI_D(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ff = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SB_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LD1SB_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SB_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LDFF1SB_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1B_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LD1B_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1B_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LDFF1B_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SH_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LD1SH_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SH_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LDFF1SH_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1H_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LD1H_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1H_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LDFF1H_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SW_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LD1SW_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SW_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LDFF1SW_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1W_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LD1W_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1W_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LDFF1W_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1D_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LD1D_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1D_Z_P_AI_D_decode_test(v_enc))))) {
+          f_LDFF1D_Z_P_AI_D(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ff = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SB_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LD1SB_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SB_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LDFF1SB_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1B_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LD1B_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1B_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LDFF1B_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SH_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LD1SH_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SH_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LDFF1SH_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1H_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LD1H_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1H_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LDFF1H_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SW_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LD1SW_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SW_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LDFF1SW_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1W_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LD1W_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1W_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LDFF1W_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1D_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LD1D_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1D_Z_P_BZ_D_64_unscaled_decode_test(v_enc))))) {
+          f_LDFF1D_Z_P_BZ_D_64_unscaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01")), iface.bits_lit(2U, "00"))) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_U = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1"));
+        const auto v_ff = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("13"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SB_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1SB_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SB_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1SB_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1B_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1B_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1B_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1B_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SH_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1SH_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SH_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1SH_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1H_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1H_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1H_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1H_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1SW_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1SW_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1SW_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1SW_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1W_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1W_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1W_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1W_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "0"))) && (true))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "0"))) && (f_LD1D_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LD1D_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_U, iface.bits_lit(1U, "1"))) && ((iface.f_eq_bits(v_ff, iface.bits_lit(1U, "1"))) && (f_LDFF1D_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))))) {
+          f_LDFF1D_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "101000")), iface.bits_lit(6U, "000000"))) && (true)))))))) {
+      if ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "100")), iface.bits_lit(3U, "000"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && (true))))))))) {
+        if (f_STR_P_BI___decode_test(v_enc)) {
+          f_STR_P_BI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("4"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((true) && (true))))))))) {
+        if (f_STR_Z_BI___decode_test(v_enc)) {
+          f_STR_Z_BI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && ((true) && (true))))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else if ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "110")))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && ((true) && (true))))))))) {
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("22"), /*wd*/ iface.bigint_lit("3"));
+        const auto v_o2 = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("1"));
+        if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "000"))) && ((true) && (f_ST1B_Z_P_BR___decode_test(v_enc)))) {
+          f_ST1B_Z_P_BR__(v_enc);
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "010"))) && ((true) && (f_ST1H_Z_P_BR___decode_test(v_enc)))) {
+          f_ST1H_Z_P_BR__(v_enc);
+        } else if ((iface.f_eq_bits(iface.f_and_bits(v_opc, iface.bits_lit(3U, "110")), iface.bits_lit(3U, "100"))) && ((true) && (f_ST1W_Z_P_BR___decode_test(v_enc)))) {
+          f_ST1W_Z_P_BR__(v_enc);
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && (iface.f_eq_bits(v_o2, iface.bits_lit(1U, "0")))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_opc, iface.bits_lit(3U, "111"))) && ((iface.f_eq_bits(v_o2, iface.bits_lit(1U, "1"))) && (f_ST1D_Z_P_BR___decode_test(v_enc)))) {
+          f_ST1D_Z_P_BR__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "101000")), iface.bits_lit(6U, "001000"))) && (true)))))))) {
+      if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_STNT1B_Z_P_BR_Contiguous_decode_test(v_enc))) {
+          f_STNT1B_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_STNT1H_Z_P_BR_Contiguous_decode_test(v_enc))) {
+          f_STNT1H_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_STNT1W_Z_P_BR_Contiguous_decode_test(v_enc))) {
+          f_STNT1W_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_STNT1D_Z_P_BR_Contiguous_decode_test(v_enc))) {
+          f_STNT1D_Z_P_BR_Contiguous(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ST2B_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST2B_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_ST3B_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST3B_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_ST4B_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST4B_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ST2H_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST2H_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_ST3H_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST3H_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_ST4H_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST4H_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ST2W_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST2W_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_ST3W_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST3W_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_ST4W_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST4W_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ST2D_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST2D_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_ST3D_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST3D_Z_P_BR_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_ST4D_Z_P_BR_Contiguous_decode_test(v_enc)))) {
+          f_ST4D_Z_P_BR_Contiguous(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("14"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && (true)))))))) {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "101000")), iface.bits_lit(6U, "100000"))) && (true)))))))) {
+      if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && ((true) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_ST1B_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))) {
+          f_ST1B_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_ST1H_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))) {
+          f_ST1H_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_ST1W_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))) {
+          f_ST1W_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_ST1D_Z_P_BZ_D_x32_unscaled_decode_test(v_enc))) {
+          f_ST1D_Z_P_BZ_D_x32_unscaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((true) && ((true) && ((true) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if (iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_ST1H_Z_P_BZ_D_x32_scaled_decode_test(v_enc))) {
+          f_ST1H_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_ST1W_Z_P_BZ_D_x32_scaled_decode_test(v_enc))) {
+          f_ST1W_Z_P_BZ_D_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_ST1D_Z_P_BZ_D_x32_scaled_decode_test(v_enc))) {
+          f_ST1D_Z_P_BZ_D_x32_scaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((true) && ((true) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_ST1B_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))) {
+          f_ST1B_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_ST1H_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))) {
+          f_ST1H_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_ST1W_Z_P_BZ_S_x32_unscaled_decode_test(v_enc))) {
+          f_ST1W_Z_P_BZ_S_x32_unscaled(v_enc);
+        } else if (iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && ((true) && ((true) && (true)))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if (iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_ST1H_Z_P_BZ_S_x32_scaled_decode_test(v_enc))) {
+          f_ST1H_Z_P_BZ_S_x32_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_ST1W_Z_P_BZ_S_x32_scaled_decode_test(v_enc))) {
+          f_ST1W_Z_P_BZ_S_x32_scaled(v_enc);
+        } else if (iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "101000"))) && (true)))))))) {
+      if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((true) && ((true) && (true)))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_ST1B_Z_P_BZ_D_64_unscaled_decode_test(v_enc))) {
+          f_ST1B_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_ST1H_Z_P_BZ_D_64_unscaled_decode_test(v_enc))) {
+          f_ST1H_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_ST1W_Z_P_BZ_D_64_unscaled_decode_test(v_enc))) {
+          f_ST1W_Z_P_BZ_D_64_unscaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_ST1D_Z_P_BZ_D_64_unscaled_decode_test(v_enc))) {
+          f_ST1D_Z_P_BZ_D_64_unscaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "01"))) && ((true) && ((true) && (true)))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if (iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_ST1H_Z_P_BZ_D_64_scaled_decode_test(v_enc))) {
+          f_ST1H_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_ST1W_Z_P_BZ_D_64_scaled_decode_test(v_enc))) {
+          f_ST1W_Z_P_BZ_D_64_scaled(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_ST1D_Z_P_BZ_D_64_scaled_decode_test(v_enc))) {
+          f_ST1D_Z_P_BZ_D_64_scaled(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "10"))) && ((true) && ((true) && (true)))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_ST1B_Z_P_AI_D_decode_test(v_enc))) {
+          f_ST1B_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_ST1H_Z_P_AI_D_decode_test(v_enc))) {
+          f_ST1H_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_ST1W_Z_P_AI_D_decode_test(v_enc))) {
+          f_ST1W_Z_P_AI_D(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_ST1D_Z_P_AI_D_decode_test(v_enc))) {
+          f_ST1D_Z_P_AI_D(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "11"))) && ((true) && ((true) && (true)))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_ST1B_Z_P_AI_S_decode_test(v_enc))) {
+          f_ST1B_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_ST1H_Z_P_AI_S_decode_test(v_enc))) {
+          f_ST1H_Z_P_AI_S(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_ST1W_Z_P_AI_S_decode_test(v_enc))) {
+          f_ST1W_Z_P_AI_S(v_enc);
+        } else if (iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else if ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("29"), /*wd*/ iface.bigint_lit("3")), iface.bits_lit(3U, "111"))) && ((true) && ((true) && ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("10"), /*wd*/ iface.bigint_lit("6")), iface.bits_lit(6U, "111000")), iface.bits_lit(6U, "111000"))) && (true)))))))) {
+      if ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && (true))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_STNT1B_Z_P_BI_Contiguous_decode_test(v_enc))) {
+          f_STNT1B_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_STNT1H_Z_P_BI_Contiguous_decode_test(v_enc))) {
+          f_STNT1H_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_STNT1W_Z_P_BI_Contiguous_decode_test(v_enc))) {
+          f_STNT1W_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_STNT1D_Z_P_BI_Contiguous_decode_test(v_enc))) {
+          f_STNT1D_Z_P_BI_Contiguous(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((! (iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2")), iface.bits_lit(2U, "00")))) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "1"))) && ((true) && ((true) && (true))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        const auto v_opc = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("21"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ST2B_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST2B_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_ST3B_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST3B_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_ST4B_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST4B_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ST2H_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST2H_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_ST3H_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST3H_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_ST4H_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST4H_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ST2W_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST2W_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_ST3W_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST3W_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_ST4W_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST4W_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "01"))) && (f_ST2D_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST2D_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "10"))) && (f_ST3D_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST3D_Z_P_BI_Contiguous(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && ((iface.f_eq_bits(v_opc, iface.bits_lit(2U, "11"))) && (f_ST4D_Z_P_BI_Contiguous_decode_test(v_enc)))) {
+          f_ST4D_Z_P_BI_Contiguous(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else if ((true) && ((true) && ((true) && ((iface.f_eq_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("20"), /*wd*/ iface.bigint_lit("1")), iface.bits_lit(1U, "0"))) && ((true) && ((true) && (true))))))) {
+        const auto v_msz = iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("23"), /*wd*/ iface.bigint_lit("2"));
+        if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "00"))) && (f_ST1B_Z_P_BI___decode_test(v_enc))) {
+          f_ST1B_Z_P_BI__(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "01"))) && (f_ST1H_Z_P_BI___decode_test(v_enc))) {
+          f_ST1H_Z_P_BI__(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "10"))) && (f_ST1W_Z_P_BI___decode_test(v_enc))) {
+          f_ST1W_Z_P_BI__(v_enc);
+        } else if ((iface.f_eq_bits(v_msz, iface.bits_lit(2U, "11"))) && (f_ST1D_Z_P_BI___decode_test(v_enc))) {
+          f_ST1D_Z_P_BI__(v_enc);
+        } else {
+          throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+        } // if
+      } else {
+        throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+      } // if
+    } else {
+      throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
+    } // if
   } else if ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("24"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11110")), iface.bits_lit(5U, "00110"))) && (true))) {
     throw std::runtime_error{"aslp_lifter: unsupported! " + std::string{__func__} + " @ " + std::string{__FILE__} + ":" + std::to_string(__LINE__)};
   } else if ((true) && ((iface.f_eq_bits(iface.f_and_bits(iface.extract_bits(v_enc, /*lo*/ iface.bigint_lit("24"), /*wd*/ iface.bigint_lit("5")), iface.bits_lit(5U, "11100")), iface.bits_lit(5U, "10000"))) && (true))) {
