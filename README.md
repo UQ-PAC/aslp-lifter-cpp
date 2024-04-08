@@ -23,8 +23,11 @@ Within the lifter, there is a distinction between two different times of evaluat
 - **lift-time** refers to the execution of the C++ lifter itself. Since the opcode is given as an argument to the lifter functions, the opcode and anything derived from it is known at lift-time.
 - **run-time** refers to the interpretation of the semantics (e.g. the LLVM IR). During run-time, values of registers and memory are available. Alternative interpretations might emit run-time code for other intermediate representations or even emulate the instruction in software.
 
+This distinction is visible in the [`Traits`](subprojects/aslp-lifter/include/aslp/interface.hpp) template argument as rt and non-rt types, and it also appears in `llvm_interface` as "gen" and non-gen methods. You can also notice this split in the types of parameters and return types in llvm_interface.
+
 ### explicit instantiation
 
+Since the lifter template is quite large, it takes a substantial amount of time to compile. Fortunately, we can parallelise 
 
 
 ## generating
