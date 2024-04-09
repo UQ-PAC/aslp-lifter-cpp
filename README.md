@@ -79,6 +79,8 @@ In Meson (preferred), we define two subprojects:
   source files to support explicit instantiation of the lifter template.
 - _aslp-lifter-llvm_ uses the aslp-lifter sources to build a lifter to LLVM.
   It provides a library for users to link against.
+- _aslp-lifter-demo_ builds an executable which takes a numeric (big-endian) opcode and
+  emits its LLVM semantics. This demonstrates use of the preceding two libraries.
 
 [Meson](https://mesonbuild.com/Running-Meson.html) is very easy to use.
 These commands will configure and build the project into a build/ subdirectory.

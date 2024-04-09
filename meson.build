@@ -14,3 +14,4 @@ project('offlineasl', 'cpp',
 
 subproject('aslp-lifter')
 subproject('aslp-lifter-llvm')
+subproject('aslp-lifter-demo')

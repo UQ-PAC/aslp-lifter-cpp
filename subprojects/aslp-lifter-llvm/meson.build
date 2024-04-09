@@ -7,6 +7,7 @@ llvm_dep = dependency('llvm')
 
 lifter_name = 'aslp-lifter'
 lifter_proj = subproject(lifter_name, version: version)
+lifter_dep = lifter_proj.get_variable('gen_dep')
 instantiate_dep = lifter_proj.get_variable('instantiate_dep')
 
 incdir = 'include'
@@ -22,6 +23,8 @@ lib = library(
     '-DASLP_LIFTER_INSTANTIATE=llvm_lifter_traits'],
   cpp_pch: 'pch/cpp_pch.hpp',
   install : true)
+
+dep = declare_dependency(link_with: lib, include_directories: incdir, dependencies: [ llvm_dep, lifter_dep ])
 
 pkg = import('pkgconfig')
 pkg.generate(lib, requires: lifter_name + '=' + version)

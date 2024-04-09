@@ -140,7 +140,7 @@ protected:
   rt_global getOrInsertGlobal(unsigned count, llvm::Type *type, const std::string_view basename) {
     if (count == 0) return {};
 
-    rt_global ret{std::make_shared<std::vector<llvm::GlobalVariable *>>(count)};
+    rt_global ret{std::make_shared<rt_global::element_type>(count)};
     for (unsigned i = 0; i < count; i++) {
       std::string name{basename};
       if (count > 1)

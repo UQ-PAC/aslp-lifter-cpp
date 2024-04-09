@@ -2,6 +2,7 @@ generated
 !.gitkeep
 build
 
+.cache
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
