@@ -13,10 +13,11 @@ find = run_command('find', srcdir, '-name', '*.cpp', check : true)
 srcfiles = files(find.stdout().strip().split('\n'))
 
 install_subdir(srcdir, install_dir: install_srcdir, strip_directory : true)
+cxxflags = ['-Wno-unused-parameter']
 instantiate_dep = declare_dependency(
   sources: srcfiles,
   dependencies: gen_dep,
-  compile_args: ['-Wno-unused-parameter'])
+  compile_args: cxxflags)
 
 # needed to generate compile_commands.json when building this subproject standalone
 dummy_lib = library('dummy', 'dummy.cpp', dependencies: gen_dep, install: false)
@@ -25,4 +26,8 @@ pkg = import('pkgconfig')
 pkg.generate(
   name: meson.project_name(),
   description: 'offline aslp lifter library (template headers and explicit instantiation sources)',
-  variables: {'srcdir': '${prefix}' / install_srcdir})
+  variables: {
+    'instantiate_dir': '${prefix}' / install_srcdir,
+    'instantiate_cxxflags': ' '.join(cxxflags),
+  }
+)

@@ -12,6 +12,7 @@ project('offlineasl', 'cpp',
 
 # debug(get_option('buildtype'))
 
-subproject('aslp-lifter')
-subproject('aslp-lifter-llvm')
-subproject('aslp-lifter-demo')
+# TODO properly use dependency() to support builds against system-installed libraries
+subproject('aslp-lifter', required: get_option('aslp-lifter'))
+subproject('aslp-lifter-llvm', required: get_option('aslp-lifter-llvm'))
+subproject('aslp-lifter-demo', required: get_option('aslp-lifter-demo'))

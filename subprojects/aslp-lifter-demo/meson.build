@@ -4,13 +4,15 @@ project('aslp-lifter-demo', 'cpp',
 
 incdir = 'include'
 
-aslp_lifter_llvm_dep = subproject('aslp-lifter-llvm').get_variable('dep')
+llvm_dep = dependency('llvm')
+aslp_lifter_llvm_dep = dependency('aslp-lifter-llvm', fallback: ['aslp-lifter-llvm', 'dep'])
+aslp_lifter_dep = dependency('aslp-lifter', fallback: ['aslp-lifter', 'gen_dep'])
 
 srcfiles = files('src/main.cpp')
 
 executable(
   'aslp-lifter-demo',
   sources: srcfiles,
-  dependencies: aslp_lifter_llvm_dep,
+  dependencies: [ llvm_dep, aslp_lifter_llvm_dep, aslp_lifter_dep ],
   install: true)
 
