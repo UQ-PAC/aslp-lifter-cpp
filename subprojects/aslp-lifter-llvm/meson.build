@@ -6,20 +6,15 @@ version = meson.project_version()
 llvm_dep = dependency('llvm')
 empty_dep = dependency('', required: false)
 
-lifter_name = 'aslp-lifter'
-lifter_proj = dependency(lifter_name, version: version, fallback: [lifter_name])
-instantiate_dep = lifter_proj.get_variable(internal: 'instantiate_dep', default_value: '')
+lifter_dep = dependency('aslp-lifter', version: version, fallback: ['aslp-lifter', 'gen_dep'])
+instantiate_dep = dependency('aslp-lifter-instantiate', version: version, fallback: ['aslp-lifter', 'instantiate_dep'])
+instantiate_srcdir = instantiate_dep.get_variable(pkgconfig: 'srcdir', default_value: '')
 
-if instantiate_dep == ''
-  instantiate_srcdir = lifter_proj.get_variable(pkgconfig: 'instantiate_dir')
-  instantiate_flags = lifter_proj.get_variable(pkgconfig: 'instantiate_cxxflags')
-
-  find = run_command('find', instantiate_srcdir, '-name', '*.cpp', check : true)
-  srcfiles = files(find.stdout().strip().split('\n'))
+if instantiate_srcdir != ''
+  srcfiles = run_command('find', instantiate_srcdir, '-name', '*.cpp', check : true).stdout().strip().split('\n')
   instantiate_dep = declare_dependency(
     sources: srcfiles,
-    compile_args: instantiate_flags,
-    dependencies: lifter_proj,
+    dependencies: instantiate_dep,
   )
 endif
 
@@ -40,4 +35,4 @@ lib = library(
 dep = declare_dependency(link_with: lib, include_directories: incdir)
 
 pkg = import('pkgconfig')
-pkg.generate(lib, requires: lifter_name + '=' + version, variables: {'llvm_version': llvm_dep.version()})
+pkg.generate(lib, requires: 'aslp-lifter=' + version, variables: {'llvm_version': llvm_dep.version()})

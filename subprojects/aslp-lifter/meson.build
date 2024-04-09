@@ -10,9 +10,9 @@ install_subdir(incdir, install_dir : get_option('includedir'), strip_directory :
 gen_dep = declare_dependency(include_directories : incdir)
 
 find = run_command('find', srcdir, '-name', '*.cpp', check : true)
-srcfiles = files(find.stdout().strip().split('\n'))
+srcfiles = find.stdout().strip().split('\n')
 
-install_subdir(srcdir, install_dir: install_srcdir, strip_directory : true)
+install_subdir(srcdir, install_dir: install_srcdir)
 cxxflags = ['-Wno-unused-parameter']
 instantiate_dep = declare_dependency(
   sources: srcfiles,
@@ -25,9 +25,17 @@ dummy_lib = library('dummy', 'dummy.cpp', dependencies: gen_dep, install: false)
 pkg = import('pkgconfig')
 pkg.generate(
   name: meson.project_name(),
-  description: 'offline aslp lifter library (template headers and explicit instantiation sources)',
-  variables: {
-    'instantiate_dir': '${prefix}' / install_srcdir,
-    'instantiate_cxxflags': ' '.join(cxxflags),
-  }
+  description: 'offline aslp lifter library (template headers)',
+)
+
+instantiate_srcfiles = []
+foreach f : srcfiles
+  instantiate_srcfiles += [get_option('prefix') / install_srcdir / f]
+endforeach
+
+pkg.generate(
+  name: meson.project_name() + '-instantiate',
+  description: 'offline aslp lifter library (source files for explicit instantiation)',
+  extra_cflags: cxxflags,
+  variables: { 'srcdir': get_option('prefix') / install_srcdir, 'srcfiles': ';'.join(instantiate_srcfiles) },
 )
