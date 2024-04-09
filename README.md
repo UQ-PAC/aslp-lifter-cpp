@@ -74,7 +74,7 @@ Examples of this can be seen in the Meson and CMake projects, described below.
 To integrate the lifter with other applications, you can make use of the 
 Meson and CMake files in this repository.
 
-In Meson (preferred), we define two subprojects:
+In Meson (preferred), we define several subprojects:
 - _aslp-lifter_ is the main project, containing the lifter definition in header files and
   source files to support explicit instantiation of the lifter template.
 - _aslp-lifter-llvm_ uses the aslp-lifter sources to build a lifter to LLVM.
